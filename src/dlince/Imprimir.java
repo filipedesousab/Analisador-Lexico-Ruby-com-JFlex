@@ -7,11 +7,17 @@ public class Imprimir {
 	StringBuffer colum = new StringBuffer();
 	StringBuffer desc = new StringBuffer();
 	
+	public Imprimir(String name, String value, int line, int column){
+		tamNameValue(name, value);
+		tamLineColumn(line, column);
+		System.out.println(this.nameValue.toString() + this.lineColumn.toString());
+	}
+	
 	public Imprimir(String name, String value, int line, int column, String desc ){
 		tamNameValue(name, value);
 		tamLineColumn(line, column);
 		tamDesc(desc);
-		System.out.println(this.nameValue.toString() + this.lineColumn.toString() + this.desc.toString());
+		System.out.println(this.nameValue.toString() + this.lineColumn.toString() + this.desc.toString()+"\n");
 	}
 	
 	private void tamNameValue(String name, String value){
