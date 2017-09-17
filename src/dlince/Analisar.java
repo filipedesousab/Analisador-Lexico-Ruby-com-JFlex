@@ -11,11 +11,12 @@ public class Analisar {
 		File codigoRuby = new File("arquivos/" + "codigoRuby1" + ".rb");
 		FileReader codigoRubyReader = new FileReader(codigoRuby);
 		Analisador lexical = new Analisador(codigoRubyReader);
-        
+
+		
         TokenRuby token;
 		while ((token = lexical.yylex()) != null) {
             //System.out.println("<" + token.getName() + ", " + token.getValue() + "> (Linha: " + token.getLine() + " - Coluna: " + token.getColumn()+ ")");
-			new Imprimir(token.getName(), token.getValue(), token.getLine(), token.getColumn());
+			new Imprimir(token.getName(), token.getValue(), token.getLine(), token.getColumn(), token.getDesc());
         }
 
 	}

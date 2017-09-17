@@ -809,111 +809,111 @@ public class Analisador {
             }
           case 110: break;
           case 4: 
-            { return new TokenRuby("INTEIRO", yytext(), yyline, yycolumn);
+            { return new TokenRuby("INTEIRO", yytext(), yyline, yycolumn, "");
             }
           case 111: break;
           case 5: 
-            { return new TokenRuby("NOT", yytext(), yyline, yycolumn);
+            { return new TokenRuby("NOT", yytext(), yyline, yycolumn, "");
             }
           case 112: break;
           case 6: 
-            { return new TokenRuby("INTERROG", yytext(), yyline, yycolumn);
+            { return new TokenRuby("INTERROG", yytext(), yyline, yycolumn, "");
             }
           case 113: break;
           case 7: 
-            { return new TokenRuby("PONTO", yytext(), yyline, yycolumn);
+            { return new TokenRuby("PONTO", yytext(), yyline, yycolumn, "");
             }
           case 114: break;
           case 8: 
-            { return new TokenRuby("PLUS", yytext(), yyline, yycolumn);
+            { return new TokenRuby("PLUS", yytext(), yyline, yycolumn, "");
             }
           case 115: break;
           case 9: 
-            { return new TokenRuby("EQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("EQ", yytext(), yyline, yycolumn, "");
             }
           case 116: break;
           case 10: 
-            { return new TokenRuby("SUB", yytext(), yyline, yycolumn);
+            { return new TokenRuby("SUB", yytext(), yyline, yycolumn, "");
             }
           case 117: break;
           case 11: 
-            { return new TokenRuby("MULT", yytext(), yyline, yycolumn);
+            { return new TokenRuby("MULT", yytext(), yyline, yycolumn, "");
             }
           case 118: break;
           case 12: 
-            { return new TokenRuby("DIV", yytext(), yyline, yycolumn);
+            { return new TokenRuby("DIV", yytext(), yyline, yycolumn, "");
             }
           case 119: break;
           case 13: 
-            { return new TokenRuby("MOD", yytext(), yyline, yycolumn);
+            { return new TokenRuby("MOD", yytext(), yyline, yycolumn, "");
             }
           case 120: break;
           case 14: 
-            { return new TokenRuby("BITCOMP", yytext(), yyline, yycolumn);
+            { return new TokenRuby("BITCOMP", yytext(), yyline, yycolumn, "");
             }
           case 121: break;
           case 15: 
-            { return new TokenRuby("BITXOR", yytext(), yyline, yycolumn);
+            { return new TokenRuby("BITXOR", yytext(), yyline, yycolumn, "");
             }
           case 122: break;
           case 16: 
-            { return new TokenRuby("BITOR", yytext(), yyline, yycolumn);
+            { return new TokenRuby("BITOR", yytext(), yyline, yycolumn, "");
             }
           case 123: break;
           case 17: 
-            { return new TokenRuby("MENOR", yytext(), yyline, yycolumn);
+            { return new TokenRuby("MENOR", yytext(), yyline, yycolumn, "");
             }
           case 124: break;
           case 18: 
-            { return new TokenRuby("MAIOR", yytext(), yyline, yycolumn);
+            { return new TokenRuby("MAIOR", yytext(), yyline, yycolumn, "");
             }
           case 125: break;
           case 19: 
-            { return new TokenRuby("COLCHETE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("COLCHETE", yytext(), yyline, yycolumn, "");
             }
           case 126: break;
           case 20: 
-            { return new TokenRuby("COLCHETE2", yytext(), yyline, yycolumn);
+            { return new TokenRuby("COLCHETE2", yytext(), yyline, yycolumn, "");
             }
           case 127: break;
           case 21: 
-            { return new TokenRuby("CHAVE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("CHAVE", yytext(), yyline, yycolumn, "");
             }
           case 128: break;
           case 22: 
-            { return new TokenRuby("CHAVE2", yytext(), yyline, yycolumn);
+            { return new TokenRuby("CHAVE2", yytext(), yyline, yycolumn, "");
             }
           case 129: break;
           case 23: 
-            { return new TokenRuby("PARENTESE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("PARENTESE", yytext(), yyline, yycolumn, "");
             }
           case 130: break;
           case 24: 
-            { return new TokenRuby("PARENTESE2", yytext(), yyline, yycolumn);
+            { return new TokenRuby("PARENTESE2", yytext(), yyline, yycolumn, "");
             }
           case 131: break;
           case 25: 
-            { return new TokenRuby("ARROBA", yytext(), yyline, yycolumn);
+            { return new TokenRuby("ARROBA", yytext(), yyline, yycolumn, "");
             }
           case 132: break;
           case 26: 
-            { return new TokenRuby("DOLAR", yytext(), yyline, yycolumn);
+            { return new TokenRuby("DOLAR", yytext(), yyline, yycolumn, "");
             }
           case 133: break;
           case 27: 
-            { return new TokenRuby("PONTOVIRG", yytext(), yyline, yycolumn);
+            { return new TokenRuby("PONTOVIRG", yytext(), yyline, yycolumn, "");
             }
           case 134: break;
           case 28: 
-            { return new TokenRuby("VIRGULA", yytext(), yyline, yycolumn);
+            { return new TokenRuby("VIRGULA", yytext(), yyline, yycolumn, "");
             }
           case 135: break;
           case 29: 
-            { return new TokenRuby("DOISPONTOS", yytext(), yyline, yycolumn);
+            { return new TokenRuby("DOISPONTOS", yytext(), yyline, yycolumn, "");
             }
           case 136: break;
           case 30: 
-            { return new TokenRuby("BITAND", yytext(), yyline, yycolumn);
+            { return new TokenRuby("BITAND", yytext(), yyline, yycolumn, "");
             }
           case 137: break;
           case 31: 
@@ -925,7 +925,7 @@ public class Analisador {
             }
           case 139: break;
           case 33: 
-            { new TokenRuby("STRING", string.toString(), yyline, yycolumn); 
+            { new TokenRuby("STRING", string.toString(), yyline, yycolumn, ""); 
                               yybegin(YYINITIAL);
             }
           case 140: break;
@@ -934,108 +934,108 @@ public class Analisador {
             }
           case 141: break;
           case 35: 
-            { new TokenRuby("CHAR", string.toString(), yyline, yycolumn);
+            { new TokenRuby("CHAR", string.toString(), yyline, yycolumn, "");
                               yybegin(YYINITIAL);
             }
           case 142: break;
           case 36: 
-            { return new TokenRuby("IDENTIFICADOR_METODO", yytext(), yyline, yycolumn);
+            { return new TokenRuby("IDENTIFICADOR_METODO", yytext(), yyline, yycolumn, "");
             }
           case 143: break;
           case 37: 
-            { return new TokenRuby("DECIMAL", yytext(), yyline, yycolumn);
+            { return new TokenRuby("DECIMAL", yytext(), yyline, yycolumn, "");
             }
           case 144: break;
           case 38: 
-            { return new TokenRuby("DIFERENTE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("DIFERENTE", yytext(), yyline, yycolumn, "");
             }
           case 145: break;
           case 39: 
-            { return new TokenRuby("PLUSEQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("PLUSEQ", yytext(), yyline, yycolumn, "");
             }
           case 146: break;
           case 40: 
-            { return new TokenRuby("EQEQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("EQEQ", yytext(), yyline, yycolumn, "");
             }
           case 147: break;
           case 41: 
-            { return new TokenRuby("CORRESP", yytext(), yyline, yycolumn);
+            { return new TokenRuby("CORRESP", yytext(), yyline, yycolumn, "");
             }
           case 148: break;
           case 42: 
-            { return new TokenRuby("SUBEQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("SUBEQ", yytext(), yyline, yycolumn, "");
             }
           case 149: break;
           case 43: 
-            { return new TokenRuby("MULTEQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("MULTEQ", yytext(), yyline, yycolumn, "");
             }
           case 150: break;
           case 44: 
-            { return new TokenRuby("EXP", yytext(), yyline, yycolumn);
+            { return new TokenRuby("EXP", yytext(), yyline, yycolumn, "");
             }
           case 151: break;
           case 45: 
-            { return new TokenRuby("DIVEQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("DIVEQ", yytext(), yyline, yycolumn, "");
             }
           case 152: break;
           case 46: 
-            { return new TokenRuby("MODEQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("MODEQ", yytext(), yyline, yycolumn, "");
             }
           case 153: break;
           case 47: 
-            { return new TokenRuby("BITXOREQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("BITXOREQ", yytext(), yyline, yycolumn, "");
             }
           case 154: break;
           case 48: 
-            { return new TokenRuby("OREQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("OREQ", yytext(), yyline, yycolumn, "");
             }
           case 155: break;
           case 49: 
-            { return new TokenRuby("ORBOOL", yytext(), yyline, yycolumn);
+            { return new TokenRuby("ORBOOL", yytext(), yyline, yycolumn, "");
             }
           case 156: break;
           case 50: 
-            { return new TokenRuby("MENOREQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("MENOREQ", yytext(), yyline, yycolumn, "");
             }
           case 157: break;
           case 51: 
-            { return new TokenRuby("SHIFTL", yytext(), yyline, yycolumn);
+            { return new TokenRuby("SHIFTL", yytext(), yyline, yycolumn, "");
             }
           case 158: break;
           case 52: 
-            { return new TokenRuby("MAIOREQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("MAIOREQ", yytext(), yyline, yycolumn, "");
             }
           case 159: break;
           case 53: 
-            { return new TokenRuby("SHIFTR", yytext(), yyline, yycolumn);
+            { return new TokenRuby("SHIFTR", yytext(), yyline, yycolumn, "");
             }
           case 160: break;
           case 54: 
-            { return new TokenRuby("DOISPONTDUP", yytext(), yyline, yycolumn);
+            { return new TokenRuby("DOISPONTDUP", yytext(), yyline, yycolumn, "");
             }
           case 161: break;
           case 55: 
-            { return new TokenRuby("BITANDEQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("BITANDEQ", yytext(), yyline, yycolumn, "");
             }
           case 162: break;
           case 56: 
-            { return new TokenRuby("ANDBOOL", yytext(), yyline, yycolumn);
+            { return new TokenRuby("ANDBOOL", yytext(), yyline, yycolumn, "");
             }
           case 163: break;
           case 57: 
-            { return new TokenRuby("IN", yytext(), yyline, yycolumn);
+            { return new TokenRuby("IN", yytext(), yyline, yycolumn, "");
             }
           case 164: break;
           case 58: 
-            { return new TokenRuby("IF", yytext(), yyline, yycolumn);
+            { return new TokenRuby("IF", yytext(), yyline, yycolumn, "");
             }
           case 165: break;
           case 59: 
-            { return new TokenRuby("DO", yytext(), yyline, yycolumn);
+            { return new TokenRuby("DO", yytext(), yyline, yycolumn, "");
             }
           case 166: break;
           case 60: 
-            { return new TokenRuby("OR", yytext(), yyline, yycolumn);
+            { return new TokenRuby("OR", yytext(), yyline, yycolumn, "");
             }
           case 167: break;
           case 61: 
@@ -1055,175 +1055,175 @@ public class Analisador {
             }
           case 171: break;
           case 65: 
-            { return new TokenRuby("NOTACAO_CIENTIFICA", yytext(), yyline, yycolumn);
+            { return new TokenRuby("NOTACAO_CIENTIFICA", yytext(), yyline, yycolumn, "");
             }
           case 172: break;
           case 66: 
-            { return new TokenRuby("EQEQEQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("EQEQEQ", yytext(), yyline, yycolumn, "");
             }
           case 173: break;
           case 67: 
-            { return new TokenRuby("EXPEQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("EXPEQ", yytext(), yyline, yycolumn, "");
             }
           case 174: break;
           case 68: 
-            { return new TokenRuby("ORBOOLEQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("ORBOOLEQ", yytext(), yyline, yycolumn, "");
             }
           case 175: break;
           case 69: 
-            { return new TokenRuby("COMPCOMB", yytext(), yyline, yycolumn);
+            { return new TokenRuby("COMPCOMB", yytext(), yyline, yycolumn, "");
             }
           case 176: break;
           case 70: 
-            { return new TokenRuby("SHIFTLEQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("SHIFTLEQ", yytext(), yyline, yycolumn, "");
             }
           case 177: break;
           case 71: 
-            { return new TokenRuby("SHIFTREQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("SHIFTREQ", yytext(), yyline, yycolumn, "");
             }
           case 178: break;
           case 72: 
-            { return new TokenRuby("ANDBOOLEQ", yytext(), yyline, yycolumn);
+            { return new TokenRuby("ANDBOOLEQ", yytext(), yyline, yycolumn, "");
             }
           case 179: break;
           case 73: 
-            { return new TokenRuby("AND", yytext(), yyline, yycolumn);
+            { return new TokenRuby("AND", yytext(), yyline, yycolumn, "");
             }
           case 180: break;
           case 74: 
-            { return new TokenRuby("NIL", yytext(), yyline, yycolumn);
+            { return new TokenRuby("NIL", yytext(), yyline, yycolumn, "");
             }
           case 181: break;
           case 75: 
-            { return new TokenRuby("DEF", yytext(), yyline, yycolumn);
+            { return new TokenRuby("DEF", yytext(), yyline, yycolumn, "");
             }
           case 182: break;
           case 76: 
-            { return new TokenRuby("END", yytext(), yyline, yycolumn);
+            { return new TokenRuby("END", yytext(), yyline, yycolumn, "");
             }
           case 183: break;
           case 77: 
-            { return new TokenRuby("END2", yytext(), yyline, yycolumn);
+            { return new TokenRuby("END2", yytext(), yyline, yycolumn, "");
             }
           case 184: break;
           case 78: 
-            { return new TokenRuby("FOR", yytext(), yyline, yycolumn);
+            { return new TokenRuby("FOR", yytext(), yyline, yycolumn, "");
             }
           case 185: break;
           case 79: 
-            { return new TokenRuby("SELF", yytext(), yyline, yycolumn);
+            { return new TokenRuby("SELF", yytext(), yyline, yycolumn, "");
             }
           case 186: break;
           case 80: 
-            { return new TokenRuby("NEXT", yytext(), yyline, yycolumn);
+            { return new TokenRuby("NEXT", yytext(), yyline, yycolumn, "");
             }
           case 187: break;
           case 81: 
-            { return new TokenRuby("ELSE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("ELSE", yytext(), yyline, yycolumn, "");
             }
           case 188: break;
           case 82: 
-            { return new TokenRuby("REDO", yytext(), yyline, yycolumn);
+            { return new TokenRuby("REDO", yytext(), yyline, yycolumn, "");
             }
           case 189: break;
           case 83: 
-            { return new TokenRuby("CASE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("CASE", yytext(), yyline, yycolumn, "");
             }
           case 190: break;
           case 84: 
-            { return new TokenRuby("TRUE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("TRUE", yytext(), yyline, yycolumn, "");
             }
           case 191: break;
           case 85: 
-            { return new TokenRuby("THEN", yytext(), yyline, yycolumn);
+            { return new TokenRuby("THEN", yytext(), yyline, yycolumn, "");
             }
           case 192: break;
           case 86: 
-            { return new TokenRuby("WHEN", yytext(), yyline, yycolumn);
+            { return new TokenRuby("WHEN", yytext(), yyline, yycolumn, "");
             }
           case 193: break;
           case 87: 
-            { return new TokenRuby("ALIAS", yytext(), yyline, yycolumn);
+            { return new TokenRuby("ALIAS", yytext(), yyline, yycolumn, "");
             }
           case 194: break;
           case 88: 
-            { return new TokenRuby("SUPER", yytext(), yyline, yycolumn);
+            { return new TokenRuby("SUPER", yytext(), yyline, yycolumn, "");
             }
           case 195: break;
           case 89: 
-            { return new TokenRuby("BEGIN", yytext(), yyline, yycolumn);
+            { return new TokenRuby("BEGIN", yytext(), yyline, yycolumn, "");
             }
           case 196: break;
           case 90: 
-            { return new TokenRuby("BEGIN2", yytext(), yyline, yycolumn);
+            { return new TokenRuby("BEGIN2", yytext(), yyline, yycolumn, "");
             }
           case 197: break;
           case 91: 
-            { return new TokenRuby("BREAK", yytext(), yyline, yycolumn);
+            { return new TokenRuby("BREAK", yytext(), yyline, yycolumn, "");
             }
           case 198: break;
           case 92: 
-            { return new TokenRuby("ELSIF", yytext(), yyline, yycolumn);
+            { return new TokenRuby("ELSIF", yytext(), yyline, yycolumn, "");
             }
           case 199: break;
           case 93: 
-            { return new TokenRuby("RETRY", yytext(), yyline, yycolumn);
+            { return new TokenRuby("RETRY", yytext(), yyline, yycolumn, "");
             }
           case 200: break;
           case 94: 
-            { return new TokenRuby("CLASS", yytext(), yyline, yycolumn);
+            { return new TokenRuby("CLASS", yytext(), yyline, yycolumn, "");
             }
           case 201: break;
           case 95: 
-            { return new TokenRuby("FALSE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("FALSE", yytext(), yyline, yycolumn, "");
             }
           case 202: break;
           case 96: 
-            { return new TokenRuby("UNDEF", yytext(), yyline, yycolumn);
+            { return new TokenRuby("UNDEF", yytext(), yyline, yycolumn, "");
             }
           case 203: break;
           case 97: 
-            { return new TokenRuby("UNTIL", yytext(), yyline, yycolumn);
+            { return new TokenRuby("UNTIL", yytext(), yyline, yycolumn, "");
             }
           case 204: break;
           case 98: 
-            { return new TokenRuby("YIELD", yytext(), yyline, yycolumn);
+            { return new TokenRuby("YIELD", yytext(), yyline, yycolumn, "");
             }
           case 205: break;
           case 99: 
-            { return new TokenRuby("WHILE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("WHILE", yytext(), yyline, yycolumn, "");
             }
           case 206: break;
           case 100: 
-            { return new TokenRuby("ENSURE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("ENSURE", yytext(), yyline, yycolumn, "");
             }
           case 207: break;
           case 101: 
-            { return new TokenRuby("RESCUE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("RESCUE", yytext(), yyline, yycolumn, "");
             }
           case 208: break;
           case 102: 
-            { return new TokenRuby("RETURN", yytext(), yyline, yycolumn);
+            { return new TokenRuby("RETURN", yytext(), yyline, yycolumn, "");
             }
           case 209: break;
           case 103: 
-            { return new TokenRuby("UNLESS", yytext(), yyline, yycolumn);
+            { return new TokenRuby("UNLESS", yytext(), yyline, yycolumn, "");
             }
           case 210: break;
           case 104: 
-            { return new TokenRuby("MODULE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("MODULE", yytext(), yyline, yycolumn, "");
             }
           case 211: break;
           case 105: 
-            { return new TokenRuby("__FILE__", yytext(), yyline, yycolumn);
+            { return new TokenRuby("__FILE__", yytext(), yyline, yycolumn, "");
             }
           case 212: break;
           case 106: 
-            { return new TokenRuby("__LINE__", yytext(), yyline, yycolumn);
+            { return new TokenRuby("__LINE__", yytext(), yyline, yycolumn, "");
             }
           case 213: break;
           case 107: 
-            { return new TokenRuby("DEFINED?", yytext(), yyline, yycolumn);
+            { return new TokenRuby("DEFINED?", yytext(), yyline, yycolumn, "");
             }
           case 214: break;
           default:

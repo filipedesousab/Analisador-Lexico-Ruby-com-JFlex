@@ -64,6 +64,7 @@ DecOrInt = {Decimal}|{Inteiro}
 "}"							{ return new TokenRuby("CHAVE2", yytext(), yyline, yycolumn); }
 "("							{ return new TokenRuby("PARENTESE", yytext(), yyline, yycolumn); }
 ")"							{ return new TokenRuby("PARENTESE2", yytext(), yyline, yycolumn); }
+"@@"						{ return new TokenRuby("ARROBA2", yytext(), yyline, yycolumn); }
 "@"							{ return new TokenRuby("ARROBA", yytext(), yyline, yycolumn); }
 "$"							{ return new TokenRuby("DOLAR", yytext(), yyline, yycolumn); }
 ";"							{ return new TokenRuby("PONTOVIRG", yytext(), yyline, yycolumn); }
@@ -73,7 +74,7 @@ DecOrInt = {Decimal}|{Inteiro}
 "|"							{ return new TokenRuby("BITOR", yytext(), yyline, yycolumn); }
 "?"							{ return new TokenRuby("INTERROG", yytext(), yyline, yycolumn); }
 "!"							{ return new TokenRuby("NOT", yytext(), yyline, yycolumn); }
-"::"							{ return new TokenRuby("DOISPONTDUP", yytext(), yyline, yycolumn); }
+"::"						{ return new TokenRuby("DOISPONTDUP", yytext(), yyline, yycolumn); }
 ":"							{ return new TokenRuby("DOISPONTOS", yytext(), yyline, yycolumn); }
 "^"							{ return new TokenRuby("BITXOR", yytext(), yyline, yycolumn); }
 "~"							{ return new TokenRuby("BITCOMP", yytext(), yyline, yycolumn); }
@@ -131,7 +132,7 @@ DecOrInt = {Decimal}|{Inteiro}
 
 <YYINITIAL> {
 /* IDENTIFICADORES */ 
-{Identificador}				{ return new TokenRuby("IDENTIFICADOR", yytext(), yyline, yycolumn); }
+{Identificador}				{ return new TokenRuby("IDENTIFICADOR", yytext(), yyline, yycolumn, "Identificador de métodos, variáveis, constante, etc"); }
 {IdentificadorMetodo}			{ return new TokenRuby("IDENTIFICADOR_METODO", yytext(), yyline, yycolumn); }
 
 /* NÚMEROS */
