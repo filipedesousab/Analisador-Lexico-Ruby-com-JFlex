@@ -1,4 +1,4 @@
-﻿package dlince;
+package dlince;
 
 %%
 
@@ -87,7 +87,6 @@ DecOrInt = {Decimal}|{Inteiro}
 ">"							{ return new TokenRuby("MAIOR", yytext(), yyline, yycolumn, "Retorna true se o operando da esquerda for maior que o da direita: 10>5"); }
 
 
-
 /* PALAVRAS RESERVADAS */
 "alias"						{ return new TokenRuby("ALIAS", yytext(), yyline, yycolumn, "mantém a definição atual do método, mesmo quando os métodos são substituídos."); }
 "and"						{ return new TokenRuby("AND", yytext(), yyline, yycolumn, "é equivalente a &&.Avalia o lado esquerdo e, se o resultado for verdadeiro, avalia o lado direito."); }
@@ -98,14 +97,14 @@ DecOrInt = {Decimal}|{Inteiro}
 "class"						{ return new TokenRuby("CLASS", yytext(), yyline, yycolumn, "Define uma nova classe."); }
 "def"						{ return new TokenRuby("DEF", yytext(), yyline, yycolumn, " palavra para indentificar métodos, a partir dela que o programa identifica a palavra a frente como um método"); }
 "defined?"					{ return new TokenRuby("DEFINED?", yytext(), yyline, yycolumn, "Retorna false se a expressão não estiver definida. Retorna a seqüência de caracteres que descreve um tipo de expressão."); }
-"do"						{ return new TokenRuby("DO", yytext(), yyline, yycolumn, Define uma estrutura de repetição sem condição ); }
+"do"						{ return new TokenRuby("DO", yytext(), yyline, yycolumn, "Define uma estrutura de repetição sem condição" ); }
 "else"						{ return new TokenRuby("ELSE", yytext(), yyline, yycolumn, "Representa a execução de um comando quando a condição não é validada"); }
 "elsif"						{ return new TokenRuby("ELSIF", yytext(), yyline, yycolumn, "Equivale ao fechamento de uma condição e abertura de outra, mas resumida em uma unica palavra."); }
 "END"						{ return new TokenRuby("END", yytext(), yyline, yycolumn, "Define o final da Rotina de inicialização, finaliza o bloco"); }
-"end"						{ return new TokenRuby("END2", yytext(), yyline, yycolumn, Define o final de um bloco de Expressões); }
+"end"						{ return new TokenRuby("END2", yytext(), yyline, yycolumn, "Define o final de um bloco de Expressões"); }
 "ensure"					{ return new TokenRuby("ENSURE", yytext(), yyline, yycolumn, "seu corpo de cláusula é executado sempre que o begincorpobegin for encerrado."); }
 "false"						{ return new TokenRuby("FALSE", yytext(), yyline, yycolumn, "a única instância da classe FalseClass (representa falso)"); }
-"for"						{ return new TokenRuby("FOR", yytext(), yyline, yycolumn, , "palavra para estrutura de repetição, Executa o corpo para cada elemento no resultado da expressão."); }
+"for"						{ return new TokenRuby("FOR", yytext(), yyline, yycolumn, "palavra para estrutura de repetição, Executa o corpo para cada elemento no resultado da expressão."); }
 "if"						{ return new TokenRuby("IF", yytext(), yyline, yycolumn, "expressãos usadas para execução condicional. Os valores false e nil são falsos, e tudo o mais é verdade."); }
 "in"						{ return new TokenRuby("IN", yytext(), yyline, yycolumn, "Define um contado para uma estrutura de Repetição For"); }
 "module"					{ return new TokenRuby("MODULE", yytext(), yyline, yycolumn, " tipo de objeto, que é usado para armazenar comandos, valores e fórmulas, é mais pratico pois não é necessário que seja inicializado "); }

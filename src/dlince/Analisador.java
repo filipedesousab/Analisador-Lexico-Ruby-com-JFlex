@@ -1034,19 +1034,19 @@ public class Analisador {
             }
           case 168: break;
           case 59: 
-            { return new TokenRuby("IN", yytext(), yyline, yycolumn);
+            { return new TokenRuby("IN", yytext(), yyline, yycolumn, "Define um contado para uma estrutura de Repetição For");
             }
           case 169: break;
           case 60: 
-            { return new TokenRuby("IF", yytext(), yyline, yycolumn);
+            { return new TokenRuby("IF", yytext(), yyline, yycolumn, "expressãos usadas para execução condicional. Os valores false e nil são falsos, e tudo o mais é verdade.");
             }
           case 170: break;
           case 61: 
-            { return new TokenRuby("DO", yytext(), yyline, yycolumn);
+            { return new TokenRuby("DO", yytext(), yyline, yycolumn, "Define uma estrutura de repetição sem condição" );
             }
           case 171: break;
           case 62: 
-            { return new TokenRuby("OR", yytext(), yyline, yycolumn);
+            { return new TokenRuby("OR", yytext(), yyline, yycolumn, "é equivalente a ||.Avalia o lado esquerdo, então se o resultado for falso, avalia o lado direito");
             }
           case 172: break;
           case 63: 
@@ -1098,147 +1098,147 @@ public class Analisador {
             }
           case 184: break;
           case 75: 
-            { return new TokenRuby("AND", yytext(), yyline, yycolumn);
+            { return new TokenRuby("AND", yytext(), yyline, yycolumn, "é equivalente a &&.Avalia o lado esquerdo e, se o resultado for verdadeiro, avalia o lado direito.");
             }
           case 185: break;
           case 76: 
-            { return new TokenRuby("NIL", yytext(), yyline, yycolumn);
+            { return new TokenRuby("NIL", yytext(), yyline, yycolumn, "é equivalente a Nulo.a única instância da Classe NilClass (representa falso)");
             }
           case 186: break;
           case 77: 
-            { return new TokenRuby("NOT", yytext(), yyline, yycolumn);
+            { return new TokenRuby("NOT", yytext(), yyline, yycolumn, "Retorna verdadeiro se for falso, falso se verdadeiro.");
             }
           case 187: break;
           case 78: 
-            { return new TokenRuby("DEF", yytext(), yyline, yycolumn);
+            { return new TokenRuby("DEF", yytext(), yyline, yycolumn, " palavra para indentificar métodos, a partir dela que o programa identifica a palavra a frente como um método");
             }
           case 188: break;
           case 79: 
-            { return new TokenRuby("END", yytext(), yyline, yycolumn);
+            { return new TokenRuby("END", yytext(), yyline, yycolumn, "Define o final da Rotina de inicialização, finaliza o bloco");
             }
           case 189: break;
           case 80: 
-            { return new TokenRuby("END2", yytext(), yyline, yycolumn);
+            { return new TokenRuby("END2", yytext(), yyline, yycolumn, "Define o final de um bloco de Expressões");
             }
           case 190: break;
           case 81: 
-            { return new TokenRuby("FOR", yytext(), yyline, yycolumn);
+            { return new TokenRuby("FOR", yytext(), yyline, yycolumn, "palavra para estrutura de repetição, Executa o corpo para cada elemento no resultado da expressão.");
             }
           case 191: break;
           case 82: 
-            { return new TokenRuby("SELF", yytext(), yyline, yycolumn);
+            { return new TokenRuby("SELF", yytext(), yyline, yycolumn, "o receptor do método atual");
             }
           case 192: break;
           case 83: 
-            { return new TokenRuby("NEXT", yytext(), yyline, yycolumn);
+            { return new TokenRuby("NEXT", yytext(), yyline, yycolumn, "Salta para a próxima iteração do loop mais interno.");
             }
           case 193: break;
           case 84: 
-            { return new TokenRuby("ELSE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("ELSE", yytext(), yyline, yycolumn, "Representa a execução de um comando quando a condição não é validada");
             }
           case 194: break;
           case 85: 
-            { return new TokenRuby("REDO", yytext(), yyline, yycolumn);
+            { return new TokenRuby("REDO", yytext(), yyline, yycolumn, "Reinicia a iteração do loop mais interno, sem verificar a condição do loop.");
             }
           case 195: break;
           case 86: 
-            { return new TokenRuby("CASE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("CASE", yytext(), yyline, yycolumn, "As case expressões também são para execução condicional. sendo que suas comparações equivale ao mesmo que ===.");
             }
           case 196: break;
           case 87: 
-            { return new TokenRuby("TRUE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("TRUE", yytext(), yyline, yycolumn, "a única instância da classe TrueClass (valor verdadeiro típico)");
             }
           case 197: break;
           case 88: 
-            { return new TokenRuby("THEN", yytext(), yyline, yycolumn);
+            { return new TokenRuby("THEN", yytext(), yyline, yycolumn, " indica o proximo comando a ser executado. sua colocação é opcional ");
             }
           case 198: break;
           case 89: 
-            { return new TokenRuby("WHEN", yytext(), yyline, yycolumn);
+            { return new TokenRuby("WHEN", yytext(), yyline, yycolumn, "Palavra utilizada para subdividir as condições em uma expressão case");
             }
           case 199: break;
           case 90: 
-            { return new TokenRuby("ALIAS", yytext(), yyline, yycolumn);
+            { return new TokenRuby("ALIAS", yytext(), yyline, yycolumn, "mantém a definição atual do método, mesmo quando os métodos são substituídos.");
             }
           case 200: break;
           case 91: 
-            { return new TokenRuby("SUPER", yytext(), yyline, yycolumn);
+            { return new TokenRuby("SUPER", yytext(), yyline, yycolumn, "chama o método que substitui o método atual");
             }
           case 201: break;
           case 92: 
-            { return new TokenRuby("BEGIN", yytext(), yyline, yycolumn);
+            { return new TokenRuby("BEGIN", yytext(), yyline, yycolumn, "Registra a rotina de inicialização. O bloco seguido depois BEGIN é avaliado antes de qualquer outra declaração nesse arquivo");
             }
           case 202: break;
           case 93: 
-            { return new TokenRuby("BEGIN2", yytext(), yyline, yycolumn);
+            { return new TokenRuby("BEGIN2", yytext(), yyline, yycolumn, "expressão executa seu corpo e retorna o valor da última expressão avaliada.");
             }
           case 203: break;
           case 94: 
-            { return new TokenRuby("BREAK", yytext(), yyline, yycolumn);
+            { return new TokenRuby("BREAK", yytext(), yyline, yycolumn, "Sai do loop mais interno. O break não sai da expressão case");
             }
           case 204: break;
           case 95: 
-            { return new TokenRuby("ELSIF", yytext(), yyline, yycolumn);
+            { return new TokenRuby("ELSIF", yytext(), yyline, yycolumn, "Equivale ao fechamento de uma condição e abertura de outra, mas resumida em uma unica palavra.");
             }
           case 205: break;
           case 96: 
-            { return new TokenRuby("RETRY", yytext(), yyline, yycolumn);
+            { return new TokenRuby("RETRY", yytext(), yyline, yycolumn, "reinicia a invocação de uma chamada");
             }
           case 206: break;
           case 97: 
-            { return new TokenRuby("CLASS", yytext(), yyline, yycolumn);
+            { return new TokenRuby("CLASS", yytext(), yyline, yycolumn, "Define uma nova classe.");
             }
           case 207: break;
           case 98: 
-            { return new TokenRuby("FALSE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("FALSE", yytext(), yyline, yycolumn, "a única instância da classe FalseClass (representa falso)");
             }
           case 208: break;
           case 99: 
-            { return new TokenRuby("UNDEF", yytext(), yyline, yycolumn);
+            { return new TokenRuby("UNDEF", yytext(), yyline, yycolumn, "Cancela a definição do método.");
             }
           case 209: break;
           case 100: 
-            { return new TokenRuby("UNTIL", yytext(), yyline, yycolumn);
+            { return new TokenRuby("UNTIL", yytext(), yyline, yycolumn, "Executa o corpo até a expressão de condição retornar verdadeira.");
             }
           case 210: break;
           case 101: 
-            { return new TokenRuby("YIELD", yytext(), yyline, yycolumn);
+            { return new TokenRuby("YIELD", yytext(), yyline, yycolumn, "Avalia o bloco dado ao método atual com argumentos, se nenhum argumento for dado, nil é usado como um argumento.");
             }
           case 211: break;
           case 102: 
-            { return new TokenRuby("WHILE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("WHILE", yytext(), yyline, yycolumn, "Executa o corpo enquanto a expressão de condição retorna verdadeira.");
             }
           case 212: break;
           case 103: 
-            { return new TokenRuby("ENSURE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("ENSURE", yytext(), yyline, yycolumn, "seu corpo de cláusula é executado sempre que o begincorpobegin for encerrado.");
             }
           case 213: break;
           case 104: 
-            { return new TokenRuby("RESCUE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("RESCUE", yytext(), yyline, yycolumn, "cláusula com o tipo de exceção de um Bloco correspondente");
             }
           case 214: break;
           case 105: 
-            { return new TokenRuby("RETURN", yytext(), yyline, yycolumn);
+            { return new TokenRuby("RETURN", yytext(), yyline, yycolumn, "Sai do método com o valor de retorno.");
             }
           case 215: break;
           case 106: 
-            { return new TokenRuby("UNLESS", yytext(), yyline, yycolumn);
+            { return new TokenRuby("UNLESS", yytext(), yyline, yycolumn, "expressões usadas para a execução condicional reversa. É equivalente a: if !(cond) ... else ...end");
             }
           case 216: break;
           case 107: 
-            { return new TokenRuby("MODULE", yytext(), yyline, yycolumn);
+            { return new TokenRuby("MODULE", yytext(), yyline, yycolumn, " tipo de objeto, que é usado para armazenar comandos, valores e fórmulas, é mais pratico pois não é necessário que seja inicializado ");
             }
           case 217: break;
           case 108: 
-            { return new TokenRuby("__FILE__", yytext(), yyline, yycolumn);
+            { return new TokenRuby("__FILE__", yytext(), yyline, yycolumn, "O nome do arquivo fonte atual");
             }
           case 218: break;
           case 109: 
-            { return new TokenRuby("__LINE__", yytext(), yyline, yycolumn);
+            { return new TokenRuby("__LINE__", yytext(), yyline, yycolumn, "o número da linha atual no arquivo de origem.");
             }
           case 219: break;
           case 110: 
-            { return new TokenRuby("DEFINED?", yytext(), yyline, yycolumn);
+            { return new TokenRuby("DEFINED?", yytext(), yyline, yycolumn, "Retorna false se a expressão não estiver definida. Retorna a seqüência de caracteres que descreve um tipo de expressão.");
             }
           case 220: break;
           default:
