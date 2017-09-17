@@ -1,4 +1,4 @@
-package dlince;
+﻿package dlince;
 
 %%
 
@@ -87,47 +87,48 @@ DecOrInt = {Decimal}|{Inteiro}
 ">"							{ return new TokenRuby("MAIOR", yytext(), yyline, yycolumn, "Retorna true se o operando da esquerda for maior que o da direita: 10>5"); }
 
 
+
 /* PALAVRAS RESERVADAS */
-"alias"						{ return new TokenRuby("ALIAS", yytext(), yyline, yycolumn); }
-"and"						{ return new TokenRuby("AND", yytext(), yyline, yycolumn); }
-"BEGIN"						{ return new TokenRuby("BEGIN", yytext(), yyline, yycolumn); }
-"begin"						{ return new TokenRuby("BEGIN2", yytext(), yyline, yycolumn); }
-"break"						{ return new TokenRuby("BREAK", yytext(), yyline, yycolumn); }
-"case"						{ return new TokenRuby("CASE", yytext(), yyline, yycolumn); }
-"class"						{ return new TokenRuby("CLASS", yytext(), yyline, yycolumn); }
-"def"						{ return new TokenRuby("DEF", yytext(), yyline, yycolumn); }
-"defined?"					{ return new TokenRuby("DEFINED?", yytext(), yyline, yycolumn); }
-"do"						{ return new TokenRuby("DO", yytext(), yyline, yycolumn); }
-"else"						{ return new TokenRuby("ELSE", yytext(), yyline, yycolumn); }
-"elsif"						{ return new TokenRuby("ELSIF", yytext(), yyline, yycolumn); }
-"END"						{ return new TokenRuby("END", yytext(), yyline, yycolumn); }
-"end"						{ return new TokenRuby("END2", yytext(), yyline, yycolumn); }
-"ensure"					{ return new TokenRuby("ENSURE", yytext(), yyline, yycolumn); }
-"false"						{ return new TokenRuby("FALSE", yytext(), yyline, yycolumn); }
-"for"						{ return new TokenRuby("FOR", yytext(), yyline, yycolumn); }
-"if"						{ return new TokenRuby("IF", yytext(), yyline, yycolumn); }
-"in"						{ return new TokenRuby("IN", yytext(), yyline, yycolumn); }
-"module"					{ return new TokenRuby("MODULE", yytext(), yyline, yycolumn); }
-"next"						{ return new TokenRuby("NEXT", yytext(), yyline, yycolumn); }
-"nil"						{ return new TokenRuby("NIL", yytext(), yyline, yycolumn); }
-"not"						{ return new TokenRuby("NOT", yytext(), yyline, yycolumn); }
-"or"						{ return new TokenRuby("OR", yytext(), yyline, yycolumn); }
-"redo"						{ return new TokenRuby("REDO", yytext(), yyline, yycolumn); }
-"rescue"					{ return new TokenRuby("RESCUE", yytext(), yyline, yycolumn); }
-"retry"						{ return new TokenRuby("RETRY", yytext(), yyline, yycolumn); }
-"return"					{ return new TokenRuby("RETURN", yytext(), yyline, yycolumn); }
-"self"						{ return new TokenRuby("SELF", yytext(), yyline, yycolumn); }
-"super"						{ return new TokenRuby("SUPER", yytext(), yyline, yycolumn); }
-"then"						{ return new TokenRuby("THEN", yytext(), yyline, yycolumn); }
-"true"						{ return new TokenRuby("TRUE", yytext(), yyline, yycolumn); }
-"undef"						{ return new TokenRuby("UNDEF", yytext(), yyline, yycolumn); }
-"unless"					{ return new TokenRuby("UNLESS", yytext(), yyline, yycolumn); }
-"until"						{ return new TokenRuby("UNTIL", yytext(), yyline, yycolumn); }
-"when"						{ return new TokenRuby("WHEN", yytext(), yyline, yycolumn); }
-"while"						{ return new TokenRuby("WHILE", yytext(), yyline, yycolumn); }
-"yield"						{ return new TokenRuby("YIELD", yytext(), yyline, yycolumn); }
-"__FILE__"					{ return new TokenRuby("__FILE__", yytext(), yyline, yycolumn); }
-"__LINE__"					{ return new TokenRuby("__LINE__", yytext(), yyline, yycolumn); }
+"alias"						{ return new TokenRuby("ALIAS", yytext(), yyline, yycolumn, "mantém a definição atual do método, mesmo quando os métodos são substituídos."); }
+"and"						{ return new TokenRuby("AND", yytext(), yyline, yycolumn, "é equivalente a &&.Avalia o lado esquerdo e, se o resultado for verdadeiro, avalia o lado direito."); }
+"BEGIN"						{ return new TokenRuby("BEGIN", yytext(), yyline, yycolumn, "Registra a rotina de inicialização. O bloco seguido depois BEGIN é avaliado antes de qualquer outra declaração nesse arquivo"); }
+"begin"						{ return new TokenRuby("BEGIN2", yytext(), yyline, yycolumn, "expressão executa seu corpo e retorna o valor da última expressão avaliada."); }
+"break"						{ return new TokenRuby("BREAK", yytext(), yyline, yycolumn, "Sai do loop mais interno. O break não sai da expressão case"); }
+"case"						{ return new TokenRuby("CASE", yytext(), yyline, yycolumn, "As case expressões também são para execução condicional. sendo que suas comparações equivale ao mesmo que ===."); }
+"class"						{ return new TokenRuby("CLASS", yytext(), yyline, yycolumn, "Define uma nova classe."); }
+"def"						{ return new TokenRuby("DEF", yytext(), yyline, yycolumn, " palavra para indentificar métodos, a partir dela que o programa identifica a palavra a frente como um método"); }
+"defined?"					{ return new TokenRuby("DEFINED?", yytext(), yyline, yycolumn, "Retorna false se a expressão não estiver definida. Retorna a seqüência de caracteres que descreve um tipo de expressão."); }
+"do"						{ return new TokenRuby("DO", yytext(), yyline, yycolumn, Define uma estrutura de repetição sem condição ); }
+"else"						{ return new TokenRuby("ELSE", yytext(), yyline, yycolumn, "Representa a execução de um comando quando a condição não é validada"); }
+"elsif"						{ return new TokenRuby("ELSIF", yytext(), yyline, yycolumn, "Equivale ao fechamento de uma condição e abertura de outra, mas resumida em uma unica palavra."); }
+"END"						{ return new TokenRuby("END", yytext(), yyline, yycolumn, "Define o final da Rotina de inicialização, finaliza o bloco"); }
+"end"						{ return new TokenRuby("END2", yytext(), yyline, yycolumn, Define o final de um bloco de Expressões); }
+"ensure"					{ return new TokenRuby("ENSURE", yytext(), yyline, yycolumn, "seu corpo de cláusula é executado sempre que o begincorpobegin for encerrado."); }
+"false"						{ return new TokenRuby("FALSE", yytext(), yyline, yycolumn, "a única instância da classe FalseClass (representa falso)"); }
+"for"						{ return new TokenRuby("FOR", yytext(), yyline, yycolumn, , "palavra para estrutura de repetição, Executa o corpo para cada elemento no resultado da expressão."); }
+"if"						{ return new TokenRuby("IF", yytext(), yyline, yycolumn, "expressãos usadas para execução condicional. Os valores false e nil são falsos, e tudo o mais é verdade."); }
+"in"						{ return new TokenRuby("IN", yytext(), yyline, yycolumn, "Define um contado para uma estrutura de Repetição For"); }
+"module"					{ return new TokenRuby("MODULE", yytext(), yyline, yycolumn, " tipo de objeto, que é usado para armazenar comandos, valores e fórmulas, é mais pratico pois não é necessário que seja inicializado "); }
+"next"						{ return new TokenRuby("NEXT", yytext(), yyline, yycolumn, "Salta para a próxima iteração do loop mais interno."); }
+"nil"						{ return new TokenRuby("NIL", yytext(), yyline, yycolumn, "é equivalente a Nulo.a única instância da Classe NilClass (representa falso)"); }
+"not"						{ return new TokenRuby("NOT", yytext(), yyline, yycolumn, "Retorna verdadeiro se for falso, falso se verdadeiro."); }
+"or"						{ return new TokenRuby("OR", yytext(), yyline, yycolumn, "é equivalente a ||.Avalia o lado esquerdo, então se o resultado for falso, avalia o lado direito"); }
+"redo"						{ return new TokenRuby("REDO", yytext(), yyline, yycolumn, "Reinicia a iteração do loop mais interno, sem verificar a condição do loop."); }
+"rescue"					{ return new TokenRuby("RESCUE", yytext(), yyline, yycolumn, "cláusula com o tipo de exceção de um Bloco correspondente"); }
+"retry"						{ return new TokenRuby("RETRY", yytext(), yyline, yycolumn, "reinicia a invocação de uma chamada"); }
+"return"					{ return new TokenRuby("RETURN", yytext(), yyline, yycolumn, "Sai do método com o valor de retorno."); }
+"self"						{ return new TokenRuby("SELF", yytext(), yyline, yycolumn, "o receptor do método atual"); }
+"super"						{ return new TokenRuby("SUPER", yytext(), yyline, yycolumn, "chama o método que substitui o método atual"); }
+"then"						{ return new TokenRuby("THEN", yytext(), yyline, yycolumn, " indica o proximo comando a ser executado. sua colocação é opcional "); }
+"true"						{ return new TokenRuby("TRUE", yytext(), yyline, yycolumn, "a única instância da classe TrueClass (valor verdadeiro típico)"); }
+"undef"						{ return new TokenRuby("UNDEF", yytext(), yyline, yycolumn, "Cancela a definição do método."); }
+"unless"					{ return new TokenRuby("UNLESS", yytext(), yyline, yycolumn, "expressões usadas para a execução condicional reversa. É equivalente a: if !(cond) ... else ...end"); }
+"until"						{ return new TokenRuby("UNTIL", yytext(), yyline, yycolumn, "Executa o corpo até a expressão de condição retornar verdadeira."); }
+"when"						{ return new TokenRuby("WHEN", yytext(), yyline, yycolumn, "Palavra utilizada para subdividir as condições em uma expressão case"); }
+"while"						{ return new TokenRuby("WHILE", yytext(), yyline, yycolumn, "Executa o corpo enquanto a expressão de condição retorna verdadeira."); }
+"yield"						{ return new TokenRuby("YIELD", yytext(), yyline, yycolumn, "Avalia o bloco dado ao método atual com argumentos, se nenhum argumento for dado, nil é usado como um argumento."); }
+"__FILE__"					{ return new TokenRuby("__FILE__", yytext(), yyline, yycolumn, "O nome do arquivo fonte atual"); }
+"__LINE__"					{ return new TokenRuby("__LINE__", yytext(), yyline, yycolumn, "o número da linha atual no arquivo de origem."); }
 
 }
 
