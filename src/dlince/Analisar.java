@@ -14,7 +14,7 @@ public class Analisar {
         
         TokenRuby token;
 		while ((token = lexical.yylex()) != null) {
-            System.out.println("<" + token.getName() + ", " + token.getValue() + "> (" + token.getLine() + " - " + token.getColumn()+ ")");
+            System.out.println("<" + token.getName() + ", " + token.getValue() + "> (Linha: " + token.getLine() + " - Coluna: " + token.getColumn()+ ")");
         }
 
 	}

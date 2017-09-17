@@ -1,9 +1,4 @@
-/* JFlex example: partial Java language lexer specification */
 package dlince;
-import java_cup.runtime.*;
-/**
-* This class is a simple example lexer.
-*/
 
 %%
 
@@ -16,34 +11,15 @@ import java_cup.runtime.*;
 
 %{
 	StringBuffer string = new StringBuffer();
-
-    private Symbol symbol(int type) {
-    	return new Symbol(type, yyline, yycolumn);
-    }
-    private Symbol symbol(int type, Object value) {
-        return new Symbol(type, yyline, yycolumn, value);
-    }
 %}
 
 LineTerminator = \r|\n|\r\n
 InputCharacter = [^\r\n]
 WhiteSpace     = {LineTerminator} | [ \t\f]
 
-/* comments */
-Comment = {TraditionalComment} /*| {EndOfLineComment} | {DocumentationComment}*/
-
-TraditionalComment   = "=begin"(.*{LineTerminator}*)*"=end" | "#"+.+
-// Comment can be the last line of the file, without line terminator.
-
-//EndOfLineComment     = "//" {InputCharacter}* {LineTerminator}?
-//DocumentationComment = "/**" {CommentContent} "*"+ "/"
-//CommentContent       = ( [^*] | \*+ [^/*] )*
-
-
-Identifier = [a-zA-Z_] [a-zA-Z0-9_]*
-IdentifierMetodo = [a-zA-Z_] [a-zA-Z0-9_]*("!"|"?")?
+Identificador = [a-zA-Z_] [a-zA-Z0-9_]*
+IdentificadorMetodo = [a-zA-Z_] [a-zA-Z0-9_]*("!"|"?")?
 Digito = [0-9]
-DecIntegerLiteral = 0 | [1-9][0-9]*
 Inteiro = {Digito}+("_"{Digito}+)*
 Decimal = {Digito}+"."{Digito}+|"."{Digito}+|{Digito}+"."
 DecOrInt = {Decimal}|{Inteiro}
@@ -55,6 +31,27 @@ DecOrInt = {Decimal}|{Inteiro}
 
 <YYINITIAL> {
 /* SIMBOLOS */
+"+="						{ return new TokenRuby("PLUSEQ", yytext(), yyline, yycolumn); }
+"-="						{ return new TokenRuby("SUBEQ", yytext(), yyline, yycolumn); }
+"*="						{ return new TokenRuby("MULTEQ", yytext(), yyline, yycolumn); }
+"/="						{ return new TokenRuby("DIVEQ", yytext(), yyline, yycolumn); }
+"%="						{ return new TokenRuby("MODEQ", yytext(), yyline, yycolumn); }
+"**="						{ return new TokenRuby("EXPEQ", yytext(), yyline, yycolumn); }
+"**"						{ return new TokenRuby("EXP", yytext(), yyline, yycolumn); }
+"=~"						{ return new TokenRuby("CORRESP", yytext(), yyline, yycolumn); }
+"==="						{ return new TokenRuby("EQEQEQ", yytext(), yyline, yycolumn); }
+"=="						{ return new TokenRuby("EQEQ", yytext(), yyline, yycolumn); }
+"^="						{ return new TokenRuby("BITXOREQ", yytext(), yyline, yycolumn); }
+"||="						{ return new TokenRuby("ORBOOLEQ", yytext(), yyline, yycolumn); }
+"|="						{ return new TokenRuby("OREQ", yytext(), yyline, yycolumn); }
+"!="						{ return new TokenRuby("DIFERENTE", yytext(), yyline, yycolumn); }
+"<=>"						{ return new TokenRuby("COMPCOMB", yytext(), yyline, yycolumn); }
+"<<="						{ return new TokenRuby("SHIFTLEQ", yytext(), yyline, yycolumn); }
+">>="						{ return new TokenRuby("SHIFTREQ", yytext(), yyline, yycolumn); }
+">="						{ return new TokenRuby("MAIOREQ", yytext(), yyline, yycolumn); }
+"<="						{ return new TokenRuby("MENOREQ", yytext(), yyline, yycolumn); }
+"<<"						{ return new TokenRuby("SHIFTL", yytext(), yyline, yycolumn); }
+">>"						{ return new TokenRuby("SHIFTR", yytext(), yyline, yycolumn); }
 "="							{ return new TokenRuby("EQ", yytext(), yyline, yycolumn); }
 "+"							{ return new TokenRuby("PLUS", yytext(), yyline, yycolumn); }
 "-"							{ return new TokenRuby("SUB", yytext(), yyline, yycolumn); }
@@ -72,22 +69,21 @@ DecOrInt = {Decimal}|{Inteiro}
 ";"							{ return new TokenRuby("PONTOVIRG", yytext(), yyline, yycolumn); }
 "."							{ return new TokenRuby("PONTO", yytext(), yyline, yycolumn); }
 ","							{ return new TokenRuby("VIRGULA", yytext(), yyline, yycolumn); }
-"|"							{ return new TokenRuby("PIPE", yytext(), yyline, yycolumn); }
+"||"						{ return new TokenRuby("ORBOOL", yytext(), yyline, yycolumn); }
+"|"							{ return new TokenRuby("BITOR", yytext(), yyline, yycolumn); }
 "?"							{ return new TokenRuby("INTERROG", yytext(), yyline, yycolumn); }
-"!"							{ return new TokenRuby("EXCLAMA", yytext(), yyline, yycolumn); }
+"!"							{ return new TokenRuby("NOT", yytext(), yyline, yycolumn); }
+"::"							{ return new TokenRuby("DOISPONTDUP", yytext(), yyline, yycolumn); }
 ":"							{ return new TokenRuby("DOISPONTOS", yytext(), yyline, yycolumn); }
-"^"							{ return new TokenRuby("CICONF", yytext(), yyline, yycolumn); }
-"~"							{ return new TokenRuby("TIL", yytext(), yyline, yycolumn); }
-"&"							{ return new TokenRuby("ECOM", yytext(), yyline, yycolumn); }
+"^"							{ return new TokenRuby("BITXOR", yytext(), yyline, yycolumn); }
+"~"							{ return new TokenRuby("BITCOMP", yytext(), yyline, yycolumn); }
+"&&="						{ return new TokenRuby("ANDBOOLEQ", yytext(), yyline, yycolumn); }
+"&&"						{ return new TokenRuby("ANDBOOL", yytext(), yyline, yycolumn); }
+"&="						{ return new TokenRuby("BITANDEQ", yytext(), yyline, yycolumn); }
+"&"							{ return new TokenRuby("BITAND", yytext(), yyline, yycolumn); }
 "<"							{ return new TokenRuby("MENOR", yytext(), yyline, yycolumn); }
 ">"							{ return new TokenRuby("MAIOR", yytext(), yyline, yycolumn); }
 
-/* TIPOS DE VAR */
-/*"int"						{ return new TokenRuby("INT", yytext(), yyline, yycolumn); }
-"float"						{ return new TokenRuby("FLOAT", yytext(), yyline, yycolumn); }
-"char"						{ return new TokenRuby("CHAR", yytext(), yyline, yycolumn); }
-"string"					{ return new TokenRuby("STRING", yytext(), yyline, yycolumn); }
-"boolean"					{ return new TokenRuby("BOOLEAN", yytext(), yyline, yycolumn); }*/
 
 /* PALAVRAS RESERVADAS */
 "alias"						{ return new TokenRuby("ALIAS", yytext(), yyline, yycolumn); }
@@ -134,31 +130,37 @@ DecOrInt = {Decimal}|{Inteiro}
 }
 
 <YYINITIAL> {
-/* identifiers */ 
-{Identifier}				{ return new TokenRuby("IDENTIFI", yytext(), yyline, yycolumn); }
-{IdentifierMetodo}			{ return new TokenRuby("IDENTIFIER_METODO", yytext(), yyline, yycolumn); }
+/* IDENTIFICADORES */ 
+{Identificador}				{ return new TokenRuby("IDENTIFICADOR", yytext(), yyline, yycolumn); }
+{IdentificadorMetodo}			{ return new TokenRuby("IDENTIFICADOR_METODO", yytext(), yyline, yycolumn); }
 
-/* literals */
-/*{DecIntegerLiteral}			{ return new TokenRuby("INTEGER_LITERAL", yytext(), yyline, yycolumn); }*/
-{DecOrInt}("e"|"E")("+"|"-")?{DecOrInt} { return new TokenRuby("NOTACAO_SCIEN", yytext(), yyline, yycolumn); }
+/* NÚMEROS */
+{DecOrInt}("e"|"E")("+"|"-")?{DecOrInt} { return new TokenRuby("NOTACAO_CIENTIFICA", yytext(), yyline, yycolumn); }
 {Inteiro}					{ return new TokenRuby("INTEIRO", yytext(), yyline, yycolumn); }
 {Decimal}					{ return new TokenRuby("DECIMAL", yytext(), yyline, yycolumn); }
 
+
 \"							{ string.setLength(0); yybegin(STRING); }
 
-/* comments */
-{Comment}					{ /* ignore */ }
+/* COMENTÁRIO */
+"=begin"(.*{LineTerminator}*)*"=end" | "#"+.+	{ /* ignore */ }
 
-/* whitespace */
+/* espaço em branco */
 {WhiteSpace}				{ /* ignore */ }
 }
 
+/* ESTÁDO PARA TRATAR STRINGS */
 <STRING> {
 \"							{ 
                               new TokenRuby("STRING", string.toString(), yyline, yycolumn); 
                               yybegin(YYINITIAL); 
 							}
-[^\n\r]						{ string.append( yytext() ); yybegin(CHAR); }
+
+/* CONDIÇÃO PARA TRATAR O CHAR
+   CASO A LÍNGUÁGEM TIVESSE
+   COMENTAMOS POIS O RUBY NÃO PRECISA */
+/* [^\n\r]						{ string.append( yytext() ); yybegin(CHAR); } */
+
 [^\n\r\"\\]+				{ string.append( yytext() ); }
 \\t							{ string.append('\t'); }
 \\n							{ string.append('\n'); }
@@ -167,6 +169,10 @@ DecOrInt = {Decimal}|{Inteiro}
 \\\"						{ string.append('\"'); }
 \\							{ string.append('\\'); }
 }
+
+/* ESTADOS PARA TRATAR CHAR
+   DEIXAMOS APENAS PARA PROVA DE CONCEITO
+ */
 <CHAR> {
 \"							{ 
                               new TokenRuby("CHAR", string.toString(), yyline, yycolumn);
@@ -174,6 +180,8 @@ DecOrInt = {Decimal}|{Inteiro}
 							}
 }
 
-/* error fallback */
-. { throw new RuntimeException("Caractere inválido " + yytext() + " na linha " + yyline + ", coluna " +yycolumn); }
-[^]							{ throw new Error("Illegal character <" + yytext()+">"); }
+/* Exceção caso entre caractére inválido */
+.							{ 
+							  throw new RuntimeException("Caractere inválido " + yytext() + " na linha " + yyline + ", coluna " +yycolumn); 
+							}
+
