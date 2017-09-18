@@ -1,24 +1,21 @@
 #CALCULADORA SIMPLES
 
-op =  ""
-num1 = ""
-num2 = ""
+def somar(a,b)
+	return a+b
+end
+def subtrair(a,b)
+	return a-b
+end
+def multip(a,b)
+	return a*b
+end
+def div(a,b)
+	return a/b
+end
+
 while true
 
-	def somar(a,b)
-		a+b
-	end
-	def subtrair(a,b)
-		a-b
-	end
-	def multip(a,b)
-		a*b
-	end
-	def div(a,b)
-		a/b
-	end
-
-	print "Digite a operacao[+-*/] ou [x] para fechar: "
+	print "Digite a operacao [+-*/] ou [x] para fechar: "
 	op = gets.chomp
 	if op == "x"
 		break
@@ -42,3 +39,5 @@ while true
 		
 	puts resultado
 end
+
+
