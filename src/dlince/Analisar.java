@@ -12,12 +12,10 @@ public class Analisar {
 		FileReader codigoRubyReader = new FileReader(codigoRuby);
 		Analisador lexical = new Analisador(codigoRubyReader);
 
-		
         TokenRuby token;
 		while ((token = lexical.yylex()) != null) {
 			new Imprimir(token.getName(), token.getValue(), token.getLine(), token.getColumn(), token.getDesc());
         }
-
 	}
 
 }

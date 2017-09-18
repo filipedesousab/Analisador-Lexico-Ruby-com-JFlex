@@ -35,15 +35,15 @@ public class Analisador {
    * Translates characters to character classes
    */
   private static final String ZZ_CMAP_PACKED = 
-    "\11\0\1\3\1\2\1\100\1\101\1\1\22\0\1\3\1\6\1\77"+
-    "\1\102\1\34\1\17\1\40\1\0\1\31\1\32\1\15\1\12\1\36"+
-    "\1\14\1\11\1\16\12\5\1\37\1\35\1\23\1\13\1\24\1\7"+
-    "\1\33\1\4\1\47\1\4\1\64\1\50\1\75\1\51\1\4\1\52"+
-    "\2\4\1\76\1\4\1\53\14\4\1\25\1\103\1\26\1\21\1\10"+
-    "\1\0\1\41\1\54\1\61\1\46\1\55\1\62\1\56\1\73\1\43"+
-    "\1\4\1\60\1\42\1\66\1\45\1\63\1\72\1\4\1\57\1\44"+
-    "\1\70\1\65\1\4\1\74\1\67\1\71\1\4\1\27\1\22\1\30"+
-    "\1\20\6\0\1\100\u1fa2\0\1\100\1\100\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\udfe6\0";
+    "\11\0\1\3\1\2\1\13\1\14\1\1\22\0\1\3\1\7\1\101"+
+    "\1\102\1\36\1\21\1\42\1\0\1\33\1\34\1\20\1\15\1\40"+
+    "\1\17\1\11\1\12\12\5\1\41\1\37\1\25\1\16\1\26\1\10"+
+    "\1\35\1\4\1\51\1\4\1\66\1\52\1\77\1\53\1\4\1\54"+
+    "\2\4\1\100\1\4\1\55\14\4\1\27\1\103\1\30\1\23\1\6"+
+    "\1\0\1\43\1\56\1\63\1\50\1\57\1\64\1\60\1\75\1\45"+
+    "\1\4\1\62\1\44\1\70\1\47\1\65\1\74\1\4\1\61\1\46"+
+    "\1\72\1\67\1\4\1\76\1\71\1\73\1\4\1\31\1\24\1\32"+
+    "\1\22\6\0\1\13\u1fa2\0\1\13\1\13\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\udfe6\0";
 
   /** 
    * Translates characters to character classes
@@ -56,30 +56,30 @@ public class Analisador {
   private static final int [] ZZ_ACTION = zzUnpackAction();
 
   private static final String ZZ_ACTION_PACKED_0 =
-    "\3\0\1\1\2\2\1\3\1\4\1\5\1\6\1\3"+
+    "\3\0\1\1\3\2\1\3\1\4\1\3\1\5\1\6"+
     "\1\7\1\10\1\11\1\12\1\13\1\14\1\15\1\16"+
     "\1\17\1\20\1\21\1\22\1\23\1\24\1\25\1\26"+
     "\1\27\1\30\1\31\1\32\1\33\1\34\1\35\1\36"+
-    "\22\3\1\37\1\1\1\40\1\41\1\42\1\43\1\44"+
-    "\1\0\1\45\1\0\1\46\1\47\1\3\1\50\1\51"+
-    "\1\52\1\0\1\53\1\54\1\55\1\56\1\57\1\60"+
-    "\1\61\1\62\1\63\1\64\1\65\1\66\1\67\1\70"+
-    "\1\71\1\72\2\3\1\73\1\74\6\3\1\75\13\3"+
-    "\1\76\6\3\1\2\1\77\1\100\1\101\1\102\1\4"+
-    "\1\103\2\0\2\3\1\104\1\0\1\105\1\106\1\107"+
-    "\1\110\1\111\1\112\1\3\1\113\2\3\1\114\1\3"+
-    "\1\115\1\116\1\3\1\117\4\3\1\120\6\3\1\121"+
-    "\11\3\1\0\1\103\2\3\1\0\1\3\1\122\1\3"+
-    "\1\123\5\3\1\124\2\3\1\125\2\3\1\126\6\3"+
-    "\1\127\1\130\2\3\1\131\1\103\2\3\1\0\1\132"+
-    "\1\133\1\3\1\134\1\135\1\136\1\137\2\3\1\140"+
-    "\1\3\1\141\1\142\1\3\1\143\1\144\1\3\1\145"+
-    "\1\146\2\3\1\0\1\3\1\147\1\150\1\151\1\152"+
-    "\1\153\2\3\1\0\1\3\1\154\1\155\1\0\1\156"+
-    "\1\0\1\2";
+    "\22\3\1\37\1\1\1\40\1\41\1\1\1\42\1\0"+
+    "\1\10\1\43\1\0\1\44\1\0\1\3\1\45\1\46"+
+    "\1\47\1\50\1\51\1\0\1\52\1\53\1\54\1\55"+
+    "\1\56\1\57\1\60\1\61\1\62\1\63\1\64\1\65"+
+    "\1\66\1\67\1\70\2\3\1\71\1\72\6\3\1\73"+
+    "\13\3\1\74\6\3\1\2\1\75\1\76\1\77\1\100"+
+    "\1\101\1\4\1\102\2\0\2\3\1\103\1\0\1\104"+
+    "\1\105\1\106\1\107\1\110\1\111\1\3\1\112\2\3"+
+    "\1\113\1\3\1\114\1\115\1\3\1\116\4\3\1\117"+
+    "\6\3\1\120\11\3\1\121\1\122\1\123\1\0\1\102"+
+    "\2\3\1\0\1\3\1\124\1\3\1\125\5\3\1\126"+
+    "\2\3\1\127\2\3\1\130\6\3\1\131\1\132\2\3"+
+    "\1\133\1\102\2\3\1\0\1\134\1\135\1\3\1\136"+
+    "\1\137\1\140\1\141\2\3\1\142\1\3\1\143\1\144"+
+    "\1\3\1\145\1\146\1\3\1\147\1\150\2\3\1\0"+
+    "\1\3\1\151\1\152\1\153\1\154\1\155\2\3\1\0"+
+    "\1\3\1\156\1\157\1\0\1\160\1\0\1\2";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[239];
+    int [] result = new int[245];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -104,39 +104,40 @@ public class Analisador {
   private static final int [] ZZ_ROWMAP = zzUnpackRowMap();
 
   private static final String ZZ_ROWMAP_PACKED_0 =
-    "\0\0\0\104\0\210\0\314\0\u0110\0\314\0\u0154\0\u0198"+
-    "\0\u01dc\0\314\0\u0220\0\u0264\0\u02a8\0\u02ec\0\u0330\0\u0374"+
-    "\0\u03b8\0\u03fc\0\314\0\u0440\0\u0484\0\u04c8\0\u050c\0\314"+
-    "\0\314\0\314\0\314\0\314\0\314\0\u0550\0\314\0\314"+
-    "\0\314\0\u0594\0\u05d8\0\u061c\0\u0660\0\u06a4\0\u06e8\0\u072c"+
+    "\0\0\0\104\0\210\0\314\0\u0110\0\u0154\0\314\0\u0198"+
+    "\0\u01dc\0\u0220\0\u0264\0\314\0\u02a8\0\u02ec\0\u0330\0\u0374"+
+    "\0\u03b8\0\u03fc\0\u0440\0\314\0\u0484\0\u04c8\0\u050c\0\u0550"+
+    "\0\314\0\314\0\314\0\314\0\314\0\314\0\u0594\0\314"+
+    "\0\314\0\314\0\u05d8\0\u061c\0\u0660\0\u06a4\0\u06e8\0\u072c"+
     "\0\u0770\0\u07b4\0\u07f8\0\u083c\0\u0880\0\u08c4\0\u0908\0\u094c"+
-    "\0\u0990\0\u09d4\0\u0a18\0\u0a5c\0\u0aa0\0\314\0\u0ae4\0\u0b28"+
-    "\0\314\0\u0b6c\0\314\0\314\0\u0bb0\0\u0bf4\0\u0c38\0\314"+
-    "\0\314\0\u0c7c\0\314\0\u0cc0\0\314\0\u0d04\0\314\0\314"+
-    "\0\u0d48\0\314\0\314\0\314\0\314\0\u0d8c\0\u0dd0\0\u0e14"+
-    "\0\314\0\u0e58\0\314\0\314\0\314\0\u0e9c\0\u0ee0\0\u0f24"+
-    "\0\u0154\0\u0154\0\u0f68\0\u0fac\0\u0ff0\0\u1034\0\u1078\0\u10bc"+
-    "\0\u0154\0\u1100\0\u1144\0\u1188\0\u11cc\0\u1210\0\u1254\0\u1298"+
-    "\0\u12dc\0\u1320\0\u1364\0\u13a8\0\u0154\0\u13ec\0\u1430\0\u1474"+
-    "\0\u14b8\0\u14fc\0\u1540\0\u0ae4\0\314\0\314\0\314\0\314"+
-    "\0\u1584\0\u15c8\0\u160c\0\u1650\0\u1694\0\u16d8\0\314\0\u171c"+
-    "\0\314\0\314\0\314\0\314\0\314\0\314\0\u1760\0\u0154"+
-    "\0\u17a4\0\u17e8\0\u0154\0\u182c\0\u0154\0\u1870\0\u18b4\0\u0154"+
-    "\0\u18f8\0\u193c\0\u1980\0\u19c4\0\u0154\0\u1a08\0\u1a4c\0\u1a90"+
-    "\0\u1ad4\0\u1b18\0\u1b5c\0\u0154\0\u1ba0\0\u1be4\0\u1c28\0\u1c6c"+
-    "\0\u1cb0\0\u1cf4\0\u1d38\0\u1d7c\0\u1dc0\0\u1e04\0\u160c\0\u1e48"+
-    "\0\u1e8c\0\u1ed0\0\u1f14\0\u0154\0\u1f58\0\u0154\0\u1f9c\0\u1fe0"+
-    "\0\u2024\0\u2068\0\u20ac\0\u0154\0\u20f0\0\u2134\0\u0154\0\u2178"+
-    "\0\u21bc\0\u0154\0\u2200\0\u2244\0\u2288\0\u22cc\0\u2310\0\u2354"+
-    "\0\u0154\0\u0154\0\u2398\0\u23dc\0\u0154\0\u2420\0\u2464\0\u24a8"+
-    "\0\u24ec\0\u0154\0\u0154\0\u2530\0\u0154\0\u0154\0\u0154\0\u0154"+
-    "\0\u2574\0\u25b8\0\u0154\0\u25fc\0\u0154\0\u0154\0\u2640\0\u0154"+
-    "\0\u0154\0\u2684\0\u0154\0\u0154\0\u26c8\0\u270c\0\u2750\0\u2794"+
-    "\0\u0154\0\u0154\0\u0154\0\u0154\0\u0154\0\u27d8\0\u281c\0\u2860"+
-    "\0\u28a4\0\u0154\0\u0154\0\u28e8\0\314\0\u292c\0\u2750";
+    "\0\u0990\0\u09d4\0\u0a18\0\u0a5c\0\u0aa0\0\u0ae4\0\314\0\u0b28"+
+    "\0\u0b6c\0\314\0\u0bb0\0\314\0\u0154\0\314\0\314\0\u0bf4"+
+    "\0\u0c38\0\u0c7c\0\u0cc0\0\314\0\314\0\314\0\u0d04\0\314"+
+    "\0\u0d48\0\314\0\314\0\u0d8c\0\314\0\314\0\314\0\u0dd0"+
+    "\0\u0e14\0\u0e58\0\314\0\u0e9c\0\314\0\314\0\314\0\u0ee0"+
+    "\0\u0f24\0\u0f68\0\u0198\0\u0198\0\u0fac\0\u0ff0\0\u1034\0\u1078"+
+    "\0\u10bc\0\u1100\0\u0198\0\u1144\0\u1188\0\u11cc\0\u1210\0\u1254"+
+    "\0\u1298\0\u12dc\0\u1320\0\u1364\0\u13a8\0\u13ec\0\u0198\0\u1430"+
+    "\0\u1474\0\u14b8\0\u14fc\0\u1540\0\u1584\0\u0b28\0\314\0\314"+
+    "\0\314\0\314\0\u15c8\0\u160c\0\u1650\0\u1694\0\u16d8\0\u171c"+
+    "\0\u1760\0\314\0\u17a4\0\314\0\314\0\314\0\314\0\314"+
+    "\0\314\0\u17e8\0\u0198\0\u182c\0\u1870\0\u0198\0\u18b4\0\u0198"+
+    "\0\u18f8\0\u193c\0\u0198\0\u1980\0\u19c4\0\u1a08\0\u1a4c\0\u0198"+
+    "\0\u1a90\0\u1ad4\0\u1b18\0\u1b5c\0\u1ba0\0\u1be4\0\u0198\0\u1c28"+
+    "\0\u1c6c\0\u1cb0\0\u1cf4\0\u1d38\0\u1d7c\0\u1dc0\0\u1e04\0\u1e48"+
+    "\0\314\0\314\0\314\0\u1e8c\0\u1694\0\u1ed0\0\u1f14\0\u1f58"+
+    "\0\u1f9c\0\u0198\0\u1fe0\0\u0198\0\u2024\0\u2068\0\u20ac\0\u20f0"+
+    "\0\u2134\0\u0198\0\u2178\0\u21bc\0\u0198\0\u2200\0\u2244\0\u0198"+
+    "\0\u2288\0\u22cc\0\u2310\0\u2354\0\u2398\0\u23dc\0\u0198\0\u0198"+
+    "\0\u2420\0\u2464\0\u0198\0\u24a8\0\u24ec\0\u2530\0\u2574\0\u0198"+
+    "\0\u0198\0\u25b8\0\u0198\0\u0198\0\u0198\0\u0198\0\u25fc\0\u2640"+
+    "\0\u0198\0\u2684\0\u0198\0\u0198\0\u26c8\0\u0198\0\u0198\0\u270c"+
+    "\0\u0198\0\u0198\0\u2750\0\u2794\0\u27d8\0\u281c\0\u0198\0\u0198"+
+    "\0\u0198\0\u0198\0\u0198\0\u2860\0\u28a4\0\u28e8\0\u292c\0\u0198"+
+    "\0\u0198\0\u2970\0\314\0\u29b4\0\u27d8";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[239];
+    int [] result = new int[245];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -159,150 +160,139 @@ public class Analisador {
   private static final int [] ZZ_TRANS = zzUnpackTrans();
 
   private static final String ZZ_TRANS_PACKED_0 =
-    "\1\4\1\5\2\6\1\7\1\10\1\11\1\12\1\13"+
-    "\1\14\1\15\1\16\1\17\1\20\1\21\1\22\1\23"+
-    "\1\24\1\25\1\26\1\27\1\30\1\31\1\32\1\33"+
-    "\1\34\1\35\1\36\1\37\1\40\1\41\1\42\1\43"+
-    "\1\44\1\7\1\45\1\46\1\47\1\50\1\51\1\52"+
-    "\3\7\1\53\1\54\1\7\1\55\1\7\1\56\1\57"+
-    "\1\60\1\7\1\61\1\62\1\7\1\63\1\64\2\7"+
-    "\1\65\2\7\1\66\1\0\1\6\1\67\1\4\1\70"+
-    "\2\0\74\70\1\71\3\70\1\72\1\4\2\0\74\4"+
-    "\1\73\2\0\2\4\106\0\1\6\105\0\2\7\2\74"+
-    "\1\7\30\0\36\7\12\0\1\10\2\0\1\75\1\76"+
-    "\36\0\1\77\4\0\1\77\41\0\1\100\4\0\1\101"+
-    "\67\0\2\7\2\74\1\102\30\0\36\7\12\0\1\76"+
-    "\111\0\1\103\103\0\1\104\4\0\1\105\33\0\1\106"+
-    "\42\0\1\107\103\0\1\110\1\0\1\111\101\0\1\112"+
-    "\103\0\1\113\103\0\1\114\103\0\1\115\6\0\1\116"+
-    "\74\0\1\117\7\0\1\120\73\0\1\121\10\0\1\122"+
-    "\112\0\1\123\107\0\1\124\57\0\1\125\24\0\1\126"+
-    "\47\0\2\7\2\74\1\7\30\0\1\7\1\127\2\7"+
-    "\1\130\31\7\11\0\2\7\2\74\1\7\30\0\4\7"+
-    "\1\131\14\7\1\132\14\7\11\0\2\7\2\74\1\7"+
-    "\30\0\14\7\1\133\7\7\1\134\11\7\11\0\2\7"+
-    "\2\74\1\7\30\0\2\7\1\135\11\7\1\136\5\7"+
-    "\1\137\13\7\11\0\2\7\2\74\1\7\30\0\14\7"+
-    "\1\140\5\7\1\141\13\7\11\0\2\7\2\74\1\7"+
-    "\30\0\7\7\1\142\26\7\11\0\2\7\2\74\1\7"+
-    "\30\0\12\7\1\143\23\7\11\0\2\7\2\74\1\7"+
-    "\30\0\14\7\1\144\1\7\1\145\17\7\11\0\2\7"+
-    "\2\74\1\7\30\0\1\7\1\146\2\7\1\147\31\7"+
-    "\11\0\2\7\2\74\1\7\30\0\14\7\1\150\21\7"+
-    "\11\0\2\7\2\74\1\7\30\0\1\151\1\152\34\7"+
-    "\11\0\2\7\2\74\1\7\30\0\1\153\21\7\1\154"+
-    "\13\7\11\0\2\7\2\74\1\7\30\0\16\7\1\155"+
-    "\17\7\11\0\2\7\2\74\1\7\30\0\4\7\1\156"+
-    "\31\7\11\0\2\7\2\74\1\7\30\0\22\7\1\157"+
-    "\13\7\11\0\2\7\2\74\1\7\30\0\16\7\1\160"+
-    "\13\7\1\161\3\7\11\0\2\7\2\74\1\7\30\0"+
-    "\2\7\1\162\33\7\11\0\2\7\2\74\1\7\30\0"+
-    "\32\7\1\163\3\7\5\0\1\164\2\0\75\164\2\0"+
-    "\2\164\1\70\2\0\74\70\1\0\3\70\46\0\1\165"+
-    "\11\0\1\166\10\0\1\167\6\0\1\170\11\0\1\171"+
-    "\103\0\1\76\42\0\1\77\4\0\1\77\33\0\1\172"+
-    "\3\0\1\173\1\174\1\0\1\174\73\0\2\7\2\74"+
-    "\1\7\30\0\34\7\1\175\1\176\20\0\1\177\145\0"+
-    "\1\200\41\0\1\201\103\0\1\202\114\0\1\203\72\0"+
-    "\1\204\103\0\1\205\103\0\1\206\74\0\2\7\2\74"+
-    "\1\7\30\0\2\7\1\207\33\7\11\0\2\7\2\74"+
-    "\1\7\30\0\5\7\1\210\30\7\11\0\2\7\2\74"+
-    "\1\7\30\0\1\7\1\211\34\7\11\0\2\7\2\74"+
-    "\1\7\30\0\31\7\1\212\4\7\11\0\2\7\2\74"+
-    "\1\7\30\0\1\7\1\213\34\7\11\0\2\7\2\74"+
-    "\1\7\30\0\26\7\1\214\7\7\11\0\2\7\2\74"+
-    "\1\7\30\0\27\7\1\215\6\7\11\0\2\7\2\74"+
-    "\1\7\30\0\21\7\1\216\14\7\11\0\2\7\2\74"+
-    "\1\7\30\0\10\7\1\217\25\7\11\0\2\7\2\74"+
-    "\1\7\30\0\23\7\1\220\12\7\11\0\2\7\2\74"+
-    "\1\7\30\0\15\7\1\221\20\7\11\0\2\7\2\74"+
-    "\1\7\30\0\14\7\1\222\21\7\11\0\2\7\2\74"+
-    "\1\7\30\0\3\7\1\223\32\7\11\0\2\7\2\74"+
-    "\1\7\30\0\3\7\1\224\1\7\1\225\30\7\11\0"+
-    "\2\7\2\74\1\7\30\0\3\7\1\226\1\7\1\227"+
-    "\21\7\1\230\6\7\11\0\2\7\2\74\1\7\30\0"+
-    "\3\7\1\231\32\7\11\0\2\7\2\74\1\7\30\0"+
-    "\1\232\35\7\11\0\2\7\2\74\1\7\30\0\1\7"+
-    "\1\233\34\7\11\0\2\7\2\74\1\7\30\0\16\7"+
-    "\1\234\17\7\11\0\2\7\2\74\1\7\30\0\1\7"+
-    "\1\235\3\7\1\236\21\7\1\237\6\7\11\0\2\7"+
-    "\2\74\1\7\30\0\5\7\1\240\30\7\11\0\2\7"+
-    "\2\74\1\7\30\0\24\7\1\241\11\7\11\0\2\7"+
-    "\2\74\1\7\30\0\14\7\1\242\21\7\11\0\2\7"+
-    "\2\74\1\7\30\0\14\7\1\243\21\7\11\0\2\7"+
-    "\2\74\1\7\30\0\2\7\1\244\11\7\1\245\21\7"+
-    "\12\0\1\171\2\0\1\75\37\0\1\77\4\0\1\77"+
-    "\33\0\1\172\2\0\1\246\1\247\77\0\1\247\103\0"+
-    "\1\172\3\0\1\173\76\0\2\7\2\74\1\7\30\0"+
-    "\11\7\1\250\24\7\11\0\2\7\2\74\1\7\30\0"+
-    "\11\7\1\251\24\7\63\0\1\252\31\0\2\7\2\74"+
-    "\1\7\30\0\1\253\35\7\11\0\2\7\2\74\1\7"+
-    "\30\0\21\7\1\254\14\7\11\0\2\7\2\74\1\7"+
-    "\30\0\14\7\1\255\21\7\11\0\2\7\2\74\1\7"+
-    "\30\0\27\7\1\256\6\7\11\0\2\7\2\74\1\7"+
-    "\30\0\2\7\1\257\33\7\11\0\2\7\2\74\1\7"+
-    "\30\0\11\7\1\260\24\7\11\0\2\7\2\74\1\7"+
-    "\30\0\2\7\1\261\33\7\11\0\2\7\2\74\1\7"+
-    "\30\0\1\262\35\7\11\0\2\7\2\74\1\7\30\0"+
-    "\2\7\1\263\11\7\1\264\21\7\11\0\2\7\2\74"+
-    "\1\7\30\0\24\7\1\265\11\7\11\0\2\7\2\74"+
-    "\1\7\30\0\20\7\1\266\15\7\11\0\2\7\2\74"+
-    "\1\7\30\0\22\7\1\267\13\7\11\0\2\7\2\74"+
-    "\1\7\30\0\16\7\1\270\5\7\1\271\11\7\11\0"+
-    "\2\7\2\74\1\7\30\0\14\7\1\272\21\7\11\0"+
-    "\2\7\2\74\1\7\30\0\3\7\1\273\32\7\11\0"+
-    "\2\7\2\74\1\7\30\0\3\7\1\274\32\7\11\0"+
-    "\2\7\2\74\1\7\30\0\14\7\1\275\21\7\11\0"+
-    "\2\7\2\74\1\7\30\0\14\7\1\276\21\7\11\0"+
-    "\2\7\2\74\1\7\30\0\2\7\1\277\33\7\11\0"+
-    "\2\7\2\74\1\7\30\0\24\7\1\300\11\7\11\0"+
-    "\2\7\2\74\1\7\30\0\14\7\1\301\21\7\11\0"+
-    "\2\7\2\74\1\7\30\0\4\7\1\302\31\7\11\0"+
-    "\2\7\2\74\1\7\30\0\1\7\1\303\34\7\11\0"+
-    "\2\7\2\74\1\7\30\0\1\7\1\304\34\7\11\0"+
-    "\2\7\2\74\1\7\30\0\4\7\1\305\31\7\12\0"+
-    "\1\306\102\0\2\7\2\74\1\7\30\0\35\7\1\307"+
-    "\11\0\2\7\2\74\1\7\30\0\12\7\1\310\23\7"+
-    "\50\0\1\311\44\0\2\7\2\74\1\7\30\0\3\7"+
-    "\1\312\32\7\11\0\2\7\2\74\1\7\30\0\16\7"+
-    "\1\313\17\7\11\0\2\7\2\74\1\7\30\0\4\7"+
-    "\1\314\31\7\11\0\2\7\2\74\1\7\30\0\12\7"+
-    "\1\315\23\7\11\0\2\7\2\74\1\7\30\0\4\7"+
-    "\1\316\31\7\11\0\2\7\2\74\1\7\30\0\17\7"+
-    "\1\317\16\7\11\0\2\7\2\74\1\7\30\0\21\7"+
-    "\1\320\14\7\11\0\2\7\2\74\1\7\30\0\16\7"+
-    "\1\321\17\7\11\0\2\7\2\74\1\7\30\0\24\7"+
-    "\1\322\11\7\11\0\2\7\2\74\1\7\30\0\30\7"+
-    "\1\323\5\7\11\0\2\7\2\74\1\7\30\0\16\7"+
-    "\1\324\17\7\11\0\2\7\2\74\1\7\30\0\3\7"+
-    "\1\325\32\7\11\0\2\7\2\74\1\7\30\0\14\7"+
-    "\1\326\21\7\11\0\2\7\2\74\1\7\30\0\3\7"+
-    "\1\327\32\7\11\0\2\7\2\74\1\7\30\0\21\7"+
-    "\1\330\14\7\11\0\2\7\2\74\1\7\30\0\1\7"+
-    "\1\331\34\7\11\0\2\7\2\74\1\7\30\0\1\7"+
-    "\1\332\34\7\11\0\2\7\2\74\1\7\30\0\5\7"+
-    "\1\333\30\7\11\0\2\7\2\74\1\7\30\0\14\7"+
-    "\1\334\21\7\12\0\1\306\2\0\1\246\77\0\2\7"+
-    "\2\74\1\7\30\0\7\7\1\335\26\7\11\0\2\7"+
-    "\2\74\1\7\30\0\7\7\1\336\26\7\52\0\1\337"+
-    "\42\0\2\7\2\74\1\7\30\0\14\7\1\340\21\7"+
-    "\11\0\2\7\2\74\1\7\30\0\14\7\1\341\21\7"+
-    "\11\0\2\7\2\74\1\7\30\0\14\7\1\342\21\7"+
-    "\11\0\2\7\2\74\1\7\30\0\4\7\1\343\31\7"+
-    "\11\0\2\7\2\74\1\7\30\0\3\7\1\344\32\7"+
-    "\11\0\2\7\2\74\1\7\30\0\14\7\1\345\21\7"+
-    "\11\0\2\7\2\74\1\346\30\0\36\7\11\0\2\7"+
-    "\2\74\1\347\30\0\36\7\5\0\13\337\1\350\64\337"+
-    "\2\0\2\337\4\0\2\7\2\74\1\7\30\0\5\7"+
-    "\1\351\30\7\11\0\2\7\2\74\1\352\30\0\36\7"+
-    "\11\0\2\7\2\74\1\353\30\0\36\7\5\0\13\337"+
-    "\1\350\41\337\1\354\22\337\2\0\2\337\4\0\2\7"+
-    "\1\74\1\355\1\7\30\0\36\7\5\0\13\337\1\350"+
-    "\31\337\1\356\32\337\2\0\15\337\1\350\32\337\1\357"+
-    "\31\337\2\0\2\337";
+    "\1\4\1\5\1\6\1\7\1\10\1\11\1\12\1\13"+
+    "\1\14\1\15\1\16\1\4\1\7\1\17\1\20\1\21"+
+    "\1\22\1\23\1\24\1\25\1\26\1\27\1\30\1\31"+
+    "\1\32\1\33\1\34\1\35\1\36\1\37\1\40\1\41"+
+    "\1\42\1\43\1\44\1\45\1\10\1\46\1\47\1\50"+
+    "\1\51\1\52\1\53\3\10\1\54\1\55\1\10\1\56"+
+    "\1\10\1\57\1\60\1\61\1\10\1\62\1\63\1\10"+
+    "\1\64\1\65\2\10\1\66\2\10\1\67\1\70\1\4"+
+    "\1\71\2\4\76\71\1\72\1\71\1\73\101\4\1\74"+
+    "\2\4\106\0\1\7\103\0\1\75\7\0\1\76\75\0"+
+    "\3\10\2\77\32\0\36\10\10\0\1\11\1\100\2\0"+
+    "\1\101\40\0\1\102\4\0\1\102\30\0\2\10\1\103"+
+    "\2\77\32\0\36\10\21\0\1\104\3\0\1\105\66\0"+
+    "\1\101\76\0\1\16\2\0\10\16\2\0\67\16\16\0"+
+    "\1\106\103\0\1\107\3\0\1\110\33\0\1\111\43\0"+
+    "\1\112\103\0\1\113\1\0\1\114\101\0\1\115\103\0"+
+    "\1\116\103\0\1\117\5\0\1\120\75\0\1\121\6\0"+
+    "\1\122\74\0\1\123\7\0\1\124\112\0\1\125\107\0"+
+    "\1\126\60\0\1\127\23\0\1\130\45\0\3\10\2\77"+
+    "\32\0\1\10\1\131\2\10\1\132\31\10\7\0\3\10"+
+    "\2\77\32\0\4\10\1\133\14\10\1\134\14\10\7\0"+
+    "\3\10\2\77\32\0\14\10\1\135\7\10\1\136\11\10"+
+    "\7\0\3\10\2\77\32\0\2\10\1\137\11\10\1\140"+
+    "\5\10\1\141\13\10\7\0\3\10\2\77\32\0\14\10"+
+    "\1\142\5\10\1\143\13\10\7\0\3\10\2\77\32\0"+
+    "\7\10\1\144\26\10\7\0\3\10\2\77\32\0\12\10"+
+    "\1\145\23\10\7\0\3\10\2\77\32\0\14\10\1\146"+
+    "\1\10\1\147\17\10\7\0\3\10\2\77\32\0\1\10"+
+    "\1\150\2\10\1\151\31\10\7\0\3\10\2\77\32\0"+
+    "\14\10\1\152\21\10\7\0\3\10\2\77\32\0\1\153"+
+    "\1\154\34\10\7\0\3\10\2\77\32\0\1\155\21\10"+
+    "\1\156\13\10\7\0\3\10\2\77\32\0\16\10\1\157"+
+    "\17\10\7\0\3\10\2\77\32\0\4\10\1\160\31\10"+
+    "\7\0\3\10\2\77\32\0\22\10\1\161\13\10\7\0"+
+    "\3\10\2\77\32\0\16\10\1\162\13\10\1\163\3\10"+
+    "\7\0\3\10\2\77\32\0\2\10\1\164\33\10\7\0"+
+    "\3\10\2\77\32\0\32\10\1\165\3\10\3\0\1\166"+
+    "\2\0\10\166\2\0\67\166\1\71\2\0\76\71\1\0"+
+    "\1\71\50\0\1\167\11\0\1\170\10\0\1\171\6\0"+
+    "\1\172\1\0\1\173\5\0\1\174\103\0\1\101\44\0"+
+    "\1\102\4\0\1\102\31\0\1\175\3\0\1\176\3\0"+
+    "\1\177\1\0\1\177\70\0\3\10\2\77\32\0\34\10"+
+    "\1\200\1\201\21\0\1\202\144\0\1\203\42\0\1\204"+
+    "\103\0\1\205\113\0\1\206\73\0\1\207\103\0\1\210"+
+    "\103\0\1\211\71\0\3\10\2\77\32\0\2\10\1\212"+
+    "\33\10\7\0\3\10\2\77\32\0\5\10\1\213\30\10"+
+    "\7\0\3\10\2\77\32\0\1\10\1\214\34\10\7\0"+
+    "\3\10\2\77\32\0\31\10\1\215\4\10\7\0\3\10"+
+    "\2\77\32\0\1\10\1\216\34\10\7\0\3\10\2\77"+
+    "\32\0\26\10\1\217\7\10\7\0\3\10\2\77\32\0"+
+    "\27\10\1\220\6\10\7\0\3\10\2\77\32\0\21\10"+
+    "\1\221\14\10\7\0\3\10\2\77\32\0\10\10\1\222"+
+    "\25\10\7\0\3\10\2\77\32\0\23\10\1\223\12\10"+
+    "\7\0\3\10\2\77\32\0\15\10\1\224\20\10\7\0"+
+    "\3\10\2\77\32\0\14\10\1\225\21\10\7\0\3\10"+
+    "\2\77\32\0\3\10\1\226\32\10\7\0\3\10\2\77"+
+    "\32\0\3\10\1\227\1\10\1\230\30\10\7\0\3\10"+
+    "\2\77\32\0\3\10\1\231\1\10\1\232\21\10\1\233"+
+    "\6\10\7\0\3\10\2\77\32\0\3\10\1\234\32\10"+
+    "\7\0\3\10\2\77\32\0\1\235\35\10\7\0\3\10"+
+    "\2\77\32\0\1\10\1\236\34\10\7\0\3\10\2\77"+
+    "\32\0\16\10\1\237\17\10\7\0\3\10\2\77\32\0"+
+    "\1\10\1\240\3\10\1\241\21\10\1\242\6\10\7\0"+
+    "\3\10\2\77\32\0\5\10\1\243\30\10\7\0\3\10"+
+    "\2\77\32\0\24\10\1\244\11\10\7\0\3\10\2\77"+
+    "\32\0\14\10\1\245\21\10\7\0\3\10\2\77\32\0"+
+    "\14\10\1\246\21\10\7\0\3\10\2\77\32\0\2\10"+
+    "\1\247\11\10\1\250\21\10\52\0\1\251\11\0\1\252"+
+    "\10\0\1\253\16\0\1\174\1\100\43\0\1\102\4\0"+
+    "\1\102\31\0\1\175\1\254\2\0\1\255\77\0\1\255"+
+    "\103\0\1\175\3\0\1\176\76\0\3\10\2\77\32\0"+
+    "\11\10\1\256\24\10\7\0\3\10\2\77\32\0\11\10"+
+    "\1\257\24\10\63\0\1\260\27\0\3\10\2\77\32\0"+
+    "\1\261\35\10\7\0\3\10\2\77\32\0\21\10\1\262"+
+    "\14\10\7\0\3\10\2\77\32\0\14\10\1\263\21\10"+
+    "\7\0\3\10\2\77\32\0\27\10\1\264\6\10\7\0"+
+    "\3\10\2\77\32\0\2\10\1\265\33\10\7\0\3\10"+
+    "\2\77\32\0\11\10\1\266\24\10\7\0\3\10\2\77"+
+    "\32\0\2\10\1\267\33\10\7\0\3\10\2\77\32\0"+
+    "\1\270\35\10\7\0\3\10\2\77\32\0\2\10\1\271"+
+    "\11\10\1\272\21\10\7\0\3\10\2\77\32\0\24\10"+
+    "\1\273\11\10\7\0\3\10\2\77\32\0\20\10\1\274"+
+    "\15\10\7\0\3\10\2\77\32\0\22\10\1\275\13\10"+
+    "\7\0\3\10\2\77\32\0\16\10\1\276\5\10\1\277"+
+    "\11\10\7\0\3\10\2\77\32\0\14\10\1\300\21\10"+
+    "\7\0\3\10\2\77\32\0\3\10\1\301\32\10\7\0"+
+    "\3\10\2\77\32\0\3\10\1\302\32\10\7\0\3\10"+
+    "\2\77\32\0\14\10\1\303\21\10\7\0\3\10\2\77"+
+    "\32\0\14\10\1\304\21\10\7\0\3\10\2\77\32\0"+
+    "\2\10\1\305\33\10\7\0\3\10\2\77\32\0\24\10"+
+    "\1\306\11\10\7\0\3\10\2\77\32\0\14\10\1\307"+
+    "\21\10\7\0\3\10\2\77\32\0\4\10\1\310\31\10"+
+    "\7\0\3\10\2\77\32\0\1\10\1\311\34\10\7\0"+
+    "\3\10\2\77\32\0\1\10\1\312\34\10\7\0\3\10"+
+    "\2\77\32\0\4\10\1\313\31\10\10\0\1\314\102\0"+
+    "\3\10\2\77\32\0\35\10\1\315\7\0\3\10\2\77"+
+    "\32\0\12\10\1\316\23\10\50\0\1\317\42\0\3\10"+
+    "\2\77\32\0\3\10\1\320\32\10\7\0\3\10\2\77"+
+    "\32\0\16\10\1\321\17\10\7\0\3\10\2\77\32\0"+
+    "\4\10\1\322\31\10\7\0\3\10\2\77\32\0\12\10"+
+    "\1\323\23\10\7\0\3\10\2\77\32\0\4\10\1\324"+
+    "\31\10\7\0\3\10\2\77\32\0\17\10\1\325\16\10"+
+    "\7\0\3\10\2\77\32\0\21\10\1\326\14\10\7\0"+
+    "\3\10\2\77\32\0\16\10\1\327\17\10\7\0\3\10"+
+    "\2\77\32\0\24\10\1\330\11\10\7\0\3\10\2\77"+
+    "\32\0\30\10\1\331\5\10\7\0\3\10\2\77\32\0"+
+    "\16\10\1\332\17\10\7\0\3\10\2\77\32\0\3\10"+
+    "\1\333\32\10\7\0\3\10\2\77\32\0\14\10\1\334"+
+    "\21\10\7\0\3\10\2\77\32\0\3\10\1\335\32\10"+
+    "\7\0\3\10\2\77\32\0\21\10\1\336\14\10\7\0"+
+    "\3\10\2\77\32\0\1\10\1\337\34\10\7\0\3\10"+
+    "\2\77\32\0\1\10\1\340\34\10\7\0\3\10\2\77"+
+    "\32\0\5\10\1\341\30\10\7\0\3\10\2\77\32\0"+
+    "\14\10\1\342\21\10\10\0\1\314\1\254\101\0\3\10"+
+    "\2\77\32\0\7\10\1\343\26\10\7\0\3\10\2\77"+
+    "\32\0\7\10\1\344\26\10\52\0\1\345\40\0\3\10"+
+    "\2\77\32\0\14\10\1\346\21\10\7\0\3\10\2\77"+
+    "\32\0\14\10\1\347\21\10\7\0\3\10\2\77\32\0"+
+    "\14\10\1\350\21\10\7\0\3\10\2\77\32\0\4\10"+
+    "\1\351\31\10\7\0\3\10\2\77\32\0\3\10\1\352"+
+    "\32\10\7\0\3\10\2\77\32\0\14\10\1\353\21\10"+
+    "\7\0\2\10\1\354\2\77\32\0\36\10\7\0\2\10"+
+    "\1\355\2\77\32\0\36\10\3\0\13\345\2\0\1\345"+
+    "\1\356\65\345\4\0\3\10\2\77\32\0\5\10\1\357"+
+    "\30\10\7\0\2\10\1\360\2\77\32\0\36\10\7\0"+
+    "\2\10\1\361\2\77\32\0\36\10\3\0\13\345\2\0"+
+    "\1\345\1\356\40\345\1\362\24\345\4\0\3\10\1\77"+
+    "\1\363\32\0\36\10\3\0\13\345\2\0\1\345\1\356"+
+    "\30\345\1\364\47\345\2\0\1\345\1\356\31\345\1\365"+
+    "\33\345";
 
   private static int [] zzUnpackTrans() {
-    int [] result = new int[10608];
+    int [] result = new int[10744];
     int offset = 0;
     offset = zzUnpackTrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -340,17 +330,17 @@ public class Analisador {
   private static final int [] ZZ_ATTRIBUTE = zzUnpackAttribute();
 
   private static final String ZZ_ATTRIBUTE_PACKED_0 =
-    "\3\0\1\11\1\1\1\11\3\1\1\11\10\1\1\11"+
+    "\3\0\1\11\2\1\1\11\4\1\1\11\7\1\1\11"+
     "\4\1\6\11\1\1\3\11\24\1\1\11\2\1\1\11"+
-    "\1\1\2\11\1\0\1\1\1\0\2\11\1\1\1\11"+
-    "\1\1\1\11\1\0\2\11\1\1\4\11\3\1\1\11"+
-    "\1\1\3\11\37\1\4\11\2\1\2\0\2\1\1\11"+
-    "\1\0\6\11\37\1\1\0\3\1\1\0\36\1\1\0"+
-    "\25\1\1\0\10\1\1\0\3\1\1\0\1\11\1\0"+
-    "\1\1";
+    "\1\1\1\11\1\0\2\11\1\0\1\1\1\0\1\1"+
+    "\3\11\1\1\1\11\1\0\2\11\1\1\3\11\3\1"+
+    "\1\11\1\1\3\11\37\1\4\11\3\1\2\0\2\1"+
+    "\1\11\1\0\6\11\37\1\3\11\1\0\3\1\1\0"+
+    "\36\1\1\0\25\1\1\0\10\1\1\0\3\1\1\0"+
+    "\1\11\1\0\1\1";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[239];
+    int [] result = new int[245];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -800,447 +790,455 @@ public class Analisador {
       else {
         switch (zzAction < 0 ? zzAction : ZZ_ACTION[zzAction]) {
           case 1: 
-            { throw new RuntimeException("Caractere inválido " + yytext() + " na linha " + yyline + ", coluna " +yycolumn);
+            { throw new RuntimeException("Caractere inválido " + yytext() + " na linha " + (yyline+1) + ", coluna " +(yycolumn+1));
             }
-          case 111: break;
+          case 113: break;
           case 2: 
             { /* ignore */
             }
-          case 112: break;
-          case 3: 
-            { return new TokenRuby("IDENTIFICADOR", yytext(), yyline, yycolumn, "Identificador de métodos, variáveis, constante, etc");
-            }
-          case 113: break;
-          case 4: 
-            { return new TokenRuby("INTEIRO", yytext(), yyline, yycolumn);
-            }
           case 114: break;
+          case 3: 
+            { return new TokenRuby("IDENTIFICADOR", yytext(), yyline, yycolumn, "Identificador de métodos, variáveis, constantes, etc");
+            }
+          case 115: break;
+          case 4: 
+            { return new TokenRuby("INTEIRO", yytext(), yyline, yycolumn, "Valor de número inteiro.");
+            }
+          case 116: break;
           case 5: 
             { return new TokenRuby("NOT", yytext(), yyline, yycolumn, "Inverte o estado da lógica do operando: !true é equivalente a false");
             }
-          case 115: break;
+          case 117: break;
           case 6: 
             { return new TokenRuby("INTERROG", yytext(), yyline, yycolumn, "Aplicado noperador ternário");
             }
-          case 116: break;
+          case 118: break;
           case 7: 
             { return new TokenRuby("PONTO", yytext(), yyline, yycolumn, "Usado para trabalhar com objetos: \"arr = Array.new(3)\" ou \"arr.drop(3)\".");
             }
-          case 117: break;
-          case 8: 
-            { return new TokenRuby("PLUS", yytext(), yyline, yycolumn, "Operador de soma");
-            }
-          case 118: break;
-          case 9: 
-            { return new TokenRuby("EQ", yytext(), yyline, yycolumn, "Atribuição de valores");
-            }
           case 119: break;
-          case 10: 
-            { return new TokenRuby("SUB", yytext(), yyline, yycolumn, "Operador de subtração");
+          case 8: 
+            { return new TokenRuby("REGEX", yytext(), yyline, yycolumn, "Expressão Regular.");
             }
           case 120: break;
-          case 11: 
-            { return new TokenRuby("MULT", yytext(), yyline, yycolumn, "Operador de multiplicação");
+          case 9: 
+            { return new TokenRuby("PLUS", yytext(), yyline, yycolumn, "Operador de soma");
             }
           case 121: break;
-          case 12: 
-            { return new TokenRuby("DIV", yytext(), yyline, yycolumn, "Operador de divisão");
+          case 10: 
+            { return new TokenRuby("EQ", yytext(), yyline, yycolumn, "Atribuição de valores");
             }
           case 122: break;
+          case 11: 
+            { return new TokenRuby("SUB", yytext(), yyline, yycolumn, "Operador de subtração");
+            }
+          case 123: break;
+          case 12: 
+            { return new TokenRuby("MULT", yytext(), yyline, yycolumn, "Operador de multiplicação");
+            }
+          case 124: break;
           case 13: 
             { return new TokenRuby("MOD", yytext(), yyline, yycolumn, "Operador de modulo, retorna o resto de ums divisão");
             }
-          case 123: break;
+          case 125: break;
           case 14: 
             { return new TokenRuby("BITCOMP", yytext(), yyline, yycolumn, "Operador de complemento binário: ~10 retorna -11");
             }
-          case 124: break;
+          case 126: break;
           case 15: 
             { return new TokenRuby("BITXOR", yytext(), yyline, yycolumn, "Operador binário XOR: 1010 ^ 0011 = 1001");
             }
-          case 125: break;
+          case 127: break;
           case 16: 
             { return new TokenRuby("BITOR", yytext(), yyline, yycolumn, "Operador OR binário: 1010 | 0011 = 1011");
             }
-          case 126: break;
+          case 128: break;
           case 17: 
             { return new TokenRuby("MENOR", yytext(), yyline, yycolumn, "Retorna true se o operando da esquerda for menor que o da direita: 5<10");
             }
-          case 127: break;
+          case 129: break;
           case 18: 
             { return new TokenRuby("MAIOR", yytext(), yyline, yycolumn, "Retorna true se o operando da esquerda for maior que o da direita: 10>5");
             }
-          case 128: break;
+          case 130: break;
           case 19: 
             { return new TokenRuby("COLCHETE", yytext(), yyline, yycolumn, "Usado em Arrays: ary = [1, \"two\", 3.0].");
             }
-          case 129: break;
+          case 131: break;
           case 20: 
             { return new TokenRuby("COLCHETE2", yytext(), yyline, yycolumn, "Usado em Arrays: ary = [1, \"two\", 3.0].");
             }
-          case 130: break;
+          case 132: break;
           case 21: 
             { return new TokenRuby("CHAVE", yytext(), yyline, yycolumn, "Usado para delimitar Hash: h = { 7 => 35, \"c\" => 2, \"a\" => 1 }");
             }
-          case 131: break;
+          case 133: break;
           case 22: 
             { return new TokenRuby("CHAVE2", yytext(), yyline, yycolumn, "Usado para delimitar Hash: h = { 7 => 35, \"c\" => 2, \"a\" => 1 }");
             }
-          case 132: break;
+          case 134: break;
           case 23: 
             { return new TokenRuby("PARENTESE", yytext(), yyline, yycolumn, "Usado para limitar um conjundo de dados: \"(1 + 2)*5\" ou \"for a in (1..6)\"");
             }
-          case 133: break;
+          case 135: break;
           case 24: 
             { return new TokenRuby("PARENTESE2", yytext(), yyline, yycolumn, "Usado para limitar um conjundo de dados: \"(1 + 2)*5\" ou \"for a in (1..6)\"");
             }
-          case 134: break;
+          case 136: break;
           case 25: 
             { return new TokenRuby("ARROBA", yytext(), yyline, yycolumn, "Prescede uma variável de instancia \"Atributo do objeto\".");
             }
-          case 135: break;
+          case 137: break;
           case 26: 
             { return new TokenRuby("DOLAR", yytext(), yyline, yycolumn, "Prescede uma variável global.");
             }
-          case 136: break;
+          case 138: break;
           case 27: 
             { return new TokenRuby("PONTOVIRG", yytext(), yyline, yycolumn, "Delimitador de instrução, pode ser omitido.");
             }
-          case 137: break;
+          case 139: break;
           case 28: 
             { return new TokenRuby("VIRGULA", yytext(), yyline, yycolumn, "Usado para separar identificadores e dados: \"ary = [1, \"two\", 3.0]\" ou \"Array.new(3, true)\".");
             }
-          case 138: break;
+          case 140: break;
           case 29: 
             { return new TokenRuby("DOISPONTOS", yytext(), yyline, yycolumn,"Aplicado no operador ternário");
             }
-          case 139: break;
+          case 141: break;
           case 30: 
             { return new TokenRuby("BITAND", yytext(), yyline, yycolumn, "Operador AND binário: 1010 & 0011 = 0010");
             }
-          case 140: break;
+          case 142: break;
           case 31: 
-            { string.setLength(0); yybegin(STRING);
+            { yybegin(STRING); string.setLength(0);
             }
-          case 141: break;
+          case 143: break;
           case 32: 
             { string.append( yytext() );
             }
-          case 142: break;
-          case 33: 
-            { new TokenRuby("STRING", string.toString(), yyline, yycolumn); 
-                              yybegin(YYINITIAL);
-            }
-          case 143: break;
-          case 34: 
-            { string.append('\\');
-            }
           case 144: break;
-          case 35: 
+          case 33: 
+            { yybegin(YYINITIAL);
+                              return new TokenRuby("STRING", string.toString(), yyline, yycolumn, "String, sequência de caracteres.");
+            }
+          case 145: break;
+          case 34: 
             { new TokenRuby("CHAR", string.toString(), yyline, yycolumn);
                               yybegin(YYINITIAL);
             }
-          case 145: break;
-          case 36: 
-            { return new TokenRuby("IDENTIFICADOR_METODO", yytext(), yyline, yycolumn);
-            }
           case 146: break;
-          case 37: 
-            { return new TokenRuby("DECIMAL", yytext(), yyline, yycolumn);
+          case 35: 
+            { return new TokenRuby("IDENTIFICADOR_METODO", yytext(), yyline, yycolumn, "Identificador de métodos que utilizam ? ou ! no final");
             }
           case 147: break;
-          case 38: 
-            { return new TokenRuby("DIFERENTE", yytext(), yyline, yycolumn, "Retorna true se os operandos forem diferente: a != b retorna true");
+          case 36: 
+            { return new TokenRuby("DECIMAL", yytext(), yyline, yycolumn, "Valor de número decimal");
             }
           case 148: break;
-          case 39: 
-            { return new TokenRuby("NOTCORRESP", yytext(), yyline, yycolumn, "Não-Correspondência padrão, usado para expressão regular, retorna true quando a string não corresponde a expressão regular, ou false quando corresponde.");
+          case 37: 
+            { return new TokenRuby("DIFERENTE", yytext(), yyline, yycolumn, "Retorna true se os operandos forem diferente: a != b retorna true");
             }
           case 149: break;
-          case 40: 
-            { return new TokenRuby("PLUSEQ", yytext(), yyline, yycolumn, "(a += b) equivalente a (a = a + b)");
+          case 38: 
+            { return new TokenRuby("NOTCORRESP", yytext(), yyline, yycolumn, "Não-Correspondência padrão, usado para expressão regular, retorna true quando a string não corresponde a expressão regular, ou false quando corresponde.");
             }
           case 150: break;
-          case 41: 
-            { return new TokenRuby("EQEQ", yytext(), yyline, yycolumn, "Verifica se dois operandos são iguais: (a == a) retorna true, (a == b) retorna false");
+          case 39: 
+            { return new TokenRuby("PLUSEQ", yytext(), yyline, yycolumn, "(a += b) equivalente a (a = a + b)");
             }
           case 151: break;
-          case 42: 
-            { return new TokenRuby("CORRESP", yytext(), yyline, yycolumn, "Correspondência padrão, usado para expressão regular. O explo a seguie irá retornar 4, que é a posição que corresponde a expressão regular: \"abc 123\" =~ /[0-9]/");
+          case 40: 
+            { return new TokenRuby("EQEQ", yytext(), yyline, yycolumn, "Verifica se dois operandos são iguais: (a == a) retorna true, (a == b) retorna false");
             }
           case 152: break;
-          case 43: 
-            { return new TokenRuby("SUBEQ", yytext(), yyline, yycolumn, "(a -= b) equivalente a (a = a - b)");
+          case 41: 
+            { return new TokenRuby("CORRESP", yytext(), yyline, yycolumn, "Correspondência padrão, usado para expressão regular. O explo a seguie irá retornar 4, que é a posição que corresponde a expressão regular: \"abc 123\" =~ /[0-9]/");
             }
           case 153: break;
-          case 44: 
-            { return new TokenRuby("MULTEQ", yytext(), yyline, yycolumn, "(a *= b) equivalente a (a = a * b)");
+          case 42: 
+            { return new TokenRuby("SUBEQ", yytext(), yyline, yycolumn, "(a -= b) equivalente a (a = a - b)");
             }
           case 154: break;
-          case 45: 
-            { return new TokenRuby("EXP", yytext(), yyline, yycolumn, "Exponenciação: 2**3 = 8");
+          case 43: 
+            { return new TokenRuby("MULTEQ", yytext(), yyline, yycolumn, "(a *= b) equivalente a (a = a * b)");
             }
           case 155: break;
-          case 46: 
-            { return new TokenRuby("DIVEQ", yytext(), yyline, yycolumn, "(a /= b) equivalente a (a = a / b)");
+          case 44: 
+            { return new TokenRuby("EXP", yytext(), yyline, yycolumn, "Exponenciação: 2**3 = 8");
             }
           case 156: break;
-          case 47: 
+          case 45: 
             { return new TokenRuby("MODEQ", yytext(), yyline, yycolumn, "(a %= b) equivalente a (a = a % b)");
             }
           case 157: break;
-          case 48: 
+          case 46: 
             { return new TokenRuby("BITXOREQ", yytext(), yyline, yycolumn, "Faz uma operação binária XOR e atribui a variável. 10^3 retorna 9");
             }
           case 158: break;
-          case 49: 
+          case 47: 
             { return new TokenRuby("OREQ", yytext(), yyline, yycolumn, "Retorna e atribui true se pelomenos um dos operandos for true: A |= B é equivalente a A = A | B" );
             }
           case 159: break;
-          case 50: 
+          case 48: 
             { return new TokenRuby("ORBOOL", yytext(), yyline, yycolumn, "Operador lógico, retorna true se pelomenos um dos operandos forem true");
             }
           case 160: break;
-          case 51: 
+          case 49: 
             { return new TokenRuby("MENOREQ", yytext(), yyline, yycolumn, "Retorna true se o valor da esquerda for menor que o da direita ou igual: 5 <= 10");
             }
           case 161: break;
-          case 52: 
+          case 50: 
             { return new TokenRuby("SHIFTL", yytext(), yyline, yycolumn, "Left Shift, faz o deslocamento binário a esquerda, ocorrendo uma multiplicação: 10<<1 == 20");
             }
           case 162: break;
-          case 53: 
+          case 51: 
             { return new TokenRuby("MAIOREQ", yytext(), yyline, yycolumn, "Retorna true se o valor da esquerda for maior que o da direita ou igual: 10 >= 5");
             }
           case 163: break;
-          case 54: 
+          case 52: 
             { return new TokenRuby("SHIFTR", yytext(), yyline, yycolumn, "Left Right, faz o deslocamento binário a direita, ocorrendo uam divisão: 10>>1 == 5");
             }
           case 164: break;
-          case 55: 
+          case 53: 
             { return new TokenRuby("ARROBA2", yytext(), yyline, yycolumn, "Prescede uma variável de classe, equivalente ao atributo estático do Java.");
             }
           case 165: break;
-          case 56: 
+          case 54: 
             { return new TokenRuby("DOISPONTDUP", yytext(), yyline, yycolumn, "Permite acessar uma constante, módulo ou classe definida dentro de outra classe ou módulo.");
             }
           case 166: break;
-          case 57: 
+          case 55: 
             { return new TokenRuby("BITANDEQ", yytext(), yyline, yycolumn, "Operador AND binário com atribuição, sendo a=10 e b=3, a recebe o valor 2: a &= b, a == 2 ");
             }
           case 167: break;
-          case 58: 
+          case 56: 
             { return new TokenRuby("ANDBOOL", yytext(), yyline, yycolumn, "Operador lógico AND: (a==true && b==true) retorna true ");
             }
           case 168: break;
-          case 59: 
+          case 57: 
             { return new TokenRuby("IN", yytext(), yyline, yycolumn, "Define um contado para uma estrutura de Repetição For");
             }
           case 169: break;
-          case 60: 
-            { return new TokenRuby("IF", yytext(), yyline, yycolumn, "expressãos usadas para execução condicional. Os valores false e nil são falsos, e tudo o mais é verdade.");
+          case 58: 
+            { return new TokenRuby("IF", yytext(), yyline, yycolumn, "Expressãos usadas para execução condicional. Os valores false e nil são falsos, e tudo o mais é verdade.");
             }
           case 170: break;
-          case 61: 
+          case 59: 
             { return new TokenRuby("DO", yytext(), yyline, yycolumn, "Define uma estrutura de repetição sem condição" );
             }
           case 171: break;
-          case 62: 
-            { return new TokenRuby("OR", yytext(), yyline, yycolumn, "é equivalente a ||.Avalia o lado esquerdo, então se o resultado for falso, avalia o lado direito");
+          case 60: 
+            { return new TokenRuby("OR", yytext(), yyline, yycolumn, "É equivalente a ||.Avalia o lado esquerdo, então se o resultado for falso, avalia o lado direito");
             }
           case 172: break;
-          case 63: 
-            { string.append('\n');
+          case 61: 
+            { string.append("\n");
             }
           case 173: break;
-          case 64: 
-            { string.append('\r');
+          case 62: 
+            { string.append("\r");
             }
           case 174: break;
-          case 65: 
-            { string.append('\t');
+          case 63: 
+            { string.append("\t");
             }
           case 175: break;
-          case 66: 
+          case 64: 
             { string.append('\"');
             }
           case 176: break;
-          case 67: 
-            { return new TokenRuby("NOTACAO_CIENTIFICA", yytext(), yyline, yycolumn);
+          case 65: 
+            { string.append("\\");
             }
           case 177: break;
-          case 68: 
-            { return new TokenRuby("EQEQEQ", yytext(), yyline, yycolumn, "Verifica se um subconjunto etá contido em um conjunto. No exmplo a seguir irá retornar true, pois abc está contido no conjunto de letras de a à z: /[a-z]/ === \"abc\"");
+          case 66: 
+            { return new TokenRuby("NOTACAO_CIENTIFICA", yytext(), yyline, yycolumn, "Escrita de notação científica");
             }
           case 178: break;
-          case 69: 
-            { return new TokenRuby("EXPEQ", yytext(), yyline, yycolumn, "(a **= b) equivalente a (a = a ** b)");
+          case 67: 
+            { return new TokenRuby("EQEQEQ", yytext(), yyline, yycolumn, "Verifica se um subconjunto etá contido em um conjunto. No exmplo a seguir irá retornar true, pois abc está contido no conjunto de letras de a à z: /[a-z]/ === \"abc\"");
             }
           case 179: break;
-          case 70: 
-            { return new TokenRuby("ORBOOLEQ", yytext(), yyline, yycolumn, "Operador condicional, se 'a' for true mantenha 'a', se for false atribua 'b': a ||= b ");
+          case 68: 
+            { return new TokenRuby("EXPEQ", yytext(), yyline, yycolumn, "(a **= b) equivalente a (a = a ** b)");
             }
           case 180: break;
-          case 71: 
-            { return new TokenRuby("COMPCOMB", yytext(), yyline, yycolumn, "A <=> B avalia para -1, 0 ou 1; se A for menor do que, igual ou maior do que B, respectivamente");
+          case 69: 
+            { return new TokenRuby("ORBOOLEQ", yytext(), yyline, yycolumn, "Operador condicional, se 'a' for true mantenha 'a', se for false atribua 'b': a ||= b ");
             }
           case 181: break;
-          case 72: 
-            { return new TokenRuby("SHIFTLEQ", yytext(), yyline, yycolumn, "Left Shift com atribuição: A <<= B é equivalente a A = A << B");
+          case 70: 
+            { return new TokenRuby("COMPCOMB", yytext(), yyline, yycolumn, "A <=> B avalia para -1, 0 ou 1; se A for menor do que, igual ou maior do que B, respectivamente");
             }
           case 182: break;
-          case 73: 
-            { return new TokenRuby("SHIFTREQ", yytext(), yyline, yycolumn, "Right Shift com atribuição: A >>= B é equivalente a A = A >> B");
+          case 71: 
+            { return new TokenRuby("SHIFTLEQ", yytext(), yyline, yycolumn, "Left Shift com atribuição: A <<= B é equivalente a A = A << B");
             }
           case 183: break;
-          case 74: 
-            { return new TokenRuby("ANDBOOLEQ", yytext(), yyline, yycolumn,"Operador lógico AND: A &&= B é equivalente a A = A && B ");
+          case 72: 
+            { return new TokenRuby("SHIFTREQ", yytext(), yyline, yycolumn, "Right Shift com atribuição: A >>= B é equivalente a A = A >> B");
             }
           case 184: break;
-          case 75: 
-            { return new TokenRuby("AND", yytext(), yyline, yycolumn, "é equivalente a &&.Avalia o lado esquerdo e, se o resultado for verdadeiro, avalia o lado direito.");
+          case 73: 
+            { return new TokenRuby("ANDBOOLEQ", yytext(), yyline, yycolumn,"Operador lógico AND: A &&= B é equivalente a A = A && B ");
             }
           case 185: break;
-          case 76: 
-            { return new TokenRuby("NIL", yytext(), yyline, yycolumn, "é equivalente a Nulo.a única instância da Classe NilClass (representa falso)");
+          case 74: 
+            { return new TokenRuby("AND", yytext(), yyline, yycolumn, "É equivalente a &&.Avalia o lado esquerdo e, se o resultado for verdadeiro, avalia o lado direito.");
             }
           case 186: break;
-          case 77: 
-            { return new TokenRuby("NOT", yytext(), yyline, yycolumn, "Retorna verdadeiro se for falso, falso se verdadeiro.");
+          case 75: 
+            { return new TokenRuby("NIL", yytext(), yyline, yycolumn, "É equivalente a Nulo.a única instância da Classe NilClass (representa falso)");
             }
           case 187: break;
-          case 78: 
-            { return new TokenRuby("DEF", yytext(), yyline, yycolumn, " palavra para indentificar métodos, a partir dela que o programa identifica a palavra a frente como um método");
+          case 76: 
+            { return new TokenRuby("NOT", yytext(), yyline, yycolumn, "Retorna verdadeiro se for falso, falso se verdadeiro.");
             }
           case 188: break;
-          case 79: 
-            { return new TokenRuby("END", yytext(), yyline, yycolumn, "Define o final da Rotina de inicialização, finaliza o bloco");
+          case 77: 
+            { return new TokenRuby("DEF", yytext(), yyline, yycolumn, "Palavra para indentificar métodos, a partir dela que o programa identifica a palavra a frente como um método");
             }
           case 189: break;
-          case 80: 
-            { return new TokenRuby("END2", yytext(), yyline, yycolumn, "Define o final de um bloco de Expressões");
+          case 78: 
+            { return new TokenRuby("END", yytext(), yyline, yycolumn, "Define o final da Rotina de inicialização, finaliza o bloco");
             }
           case 190: break;
-          case 81: 
-            { return new TokenRuby("FOR", yytext(), yyline, yycolumn, "palavra para estrutura de repetição, Executa o corpo para cada elemento no resultado da expressão.");
+          case 79: 
+            { return new TokenRuby("END2", yytext(), yyline, yycolumn, "Define o final de um bloco de Expressões");
             }
           case 191: break;
-          case 82: 
-            { return new TokenRuby("SELF", yytext(), yyline, yycolumn, "o receptor do método atual");
+          case 80: 
+            { return new TokenRuby("FOR", yytext(), yyline, yycolumn, "Palavra para estrutura de repetição, Executa o corpo para cada elemento no resultado da expressão.");
             }
           case 192: break;
-          case 83: 
-            { return new TokenRuby("NEXT", yytext(), yyline, yycolumn, "Salta para a próxima iteração do loop mais interno.");
+          case 81: 
+            { string.append("\\n");
             }
           case 193: break;
-          case 84: 
-            { return new TokenRuby("ELSE", yytext(), yyline, yycolumn, "Representa a execução de um comando quando a condição não é validada");
+          case 82: 
+            { string.append("\\r");
             }
           case 194: break;
-          case 85: 
-            { return new TokenRuby("REDO", yytext(), yyline, yycolumn, "Reinicia a iteração do loop mais interno, sem verificar a condição do loop.");
+          case 83: 
+            { string.append("\\t");
             }
           case 195: break;
-          case 86: 
-            { return new TokenRuby("CASE", yytext(), yyline, yycolumn, "As case expressões também são para execução condicional. sendo que suas comparações equivale ao mesmo que ===.");
+          case 84: 
+            { return new TokenRuby("SELF", yytext(), yyline, yycolumn, "O receptor do método atual");
             }
           case 196: break;
-          case 87: 
-            { return new TokenRuby("TRUE", yytext(), yyline, yycolumn, "a única instância da classe TrueClass (valor verdadeiro típico)");
+          case 85: 
+            { return new TokenRuby("NEXT", yytext(), yyline, yycolumn, "Salta para a próxima iteração do loop mais interno.");
             }
           case 197: break;
-          case 88: 
-            { return new TokenRuby("THEN", yytext(), yyline, yycolumn, " indica o proximo comando a ser executado. sua colocação é opcional ");
+          case 86: 
+            { return new TokenRuby("ELSE", yytext(), yyline, yycolumn, "Representa a execução de um comando quando a condição não é validada");
             }
           case 198: break;
-          case 89: 
-            { return new TokenRuby("WHEN", yytext(), yyline, yycolumn, "Palavra utilizada para subdividir as condições em uma expressão case");
+          case 87: 
+            { return new TokenRuby("REDO", yytext(), yyline, yycolumn, "Reinicia a iteração do loop mais interno, sem verificar a condição do loop.");
             }
           case 199: break;
-          case 90: 
-            { return new TokenRuby("ALIAS", yytext(), yyline, yycolumn, "mantém a definição atual do método, mesmo quando os métodos são substituídos.");
+          case 88: 
+            { return new TokenRuby("CASE", yytext(), yyline, yycolumn, "As case expressões também são para execução condicional. sendo que suas comparações equivale ao mesmo que ===.");
             }
           case 200: break;
-          case 91: 
-            { return new TokenRuby("SUPER", yytext(), yyline, yycolumn, "chama o método que substitui o método atual");
+          case 89: 
+            { return new TokenRuby("TRUE", yytext(), yyline, yycolumn, "A única instância da classe TrueClass (valor verdadeiro típico)");
             }
           case 201: break;
-          case 92: 
-            { return new TokenRuby("BEGIN", yytext(), yyline, yycolumn, "Registra a rotina de inicialização. O bloco seguido depois BEGIN é avaliado antes de qualquer outra declaração nesse arquivo");
+          case 90: 
+            { return new TokenRuby("THEN", yytext(), yyline, yycolumn, "Indica o proximo comando a ser executado. sua colocação é opcional ");
             }
           case 202: break;
-          case 93: 
-            { return new TokenRuby("BEGIN2", yytext(), yyline, yycolumn, "expressão executa seu corpo e retorna o valor da última expressão avaliada.");
+          case 91: 
+            { return new TokenRuby("WHEN", yytext(), yyline, yycolumn, "Palavra utilizada para subdividir as condições em uma expressão case");
             }
           case 203: break;
-          case 94: 
-            { return new TokenRuby("BREAK", yytext(), yyline, yycolumn, "Sai do loop mais interno. O break não sai da expressão case");
+          case 92: 
+            { return new TokenRuby("ALIAS", yytext(), yyline, yycolumn, "Mantém a definição atual do método, mesmo quando os métodos são substituídos.");
             }
           case 204: break;
-          case 95: 
-            { return new TokenRuby("ELSIF", yytext(), yyline, yycolumn, "Equivale ao fechamento de uma condição e abertura de outra, mas resumida em uma unica palavra.");
+          case 93: 
+            { return new TokenRuby("SUPER", yytext(), yyline, yycolumn, "Chama o método que substitui o método atual");
             }
           case 205: break;
-          case 96: 
-            { return new TokenRuby("RETRY", yytext(), yyline, yycolumn, "reinicia a invocação de uma chamada");
+          case 94: 
+            { return new TokenRuby("BEGIN", yytext(), yyline, yycolumn, "Registra a rotina de inicialização. O bloco seguido depois BEGIN é avaliado antes de qualquer outra declaração nesse arquivo");
             }
           case 206: break;
-          case 97: 
-            { return new TokenRuby("CLASS", yytext(), yyline, yycolumn, "Define uma nova classe.");
+          case 95: 
+            { return new TokenRuby("BEGIN2", yytext(), yyline, yycolumn, "Expressão executa seu corpo e retorna o valor da última expressão avaliada.");
             }
           case 207: break;
-          case 98: 
-            { return new TokenRuby("FALSE", yytext(), yyline, yycolumn, "a única instância da classe FalseClass (representa falso)");
+          case 96: 
+            { return new TokenRuby("BREAK", yytext(), yyline, yycolumn, "Sai do loop mais interno. O break não sai da expressão case");
             }
           case 208: break;
-          case 99: 
-            { return new TokenRuby("UNDEF", yytext(), yyline, yycolumn, "Cancela a definição do método.");
+          case 97: 
+            { return new TokenRuby("ELSIF", yytext(), yyline, yycolumn, "Equivale ao fechamento de uma condição e abertura de outra, mas resumida em uma unica palavra.");
             }
           case 209: break;
-          case 100: 
-            { return new TokenRuby("UNTIL", yytext(), yyline, yycolumn, "Executa o corpo até a expressão de condição retornar verdadeira.");
+          case 98: 
+            { return new TokenRuby("RETRY", yytext(), yyline, yycolumn, "Reinicia a invocação de uma chamada");
             }
           case 210: break;
-          case 101: 
-            { return new TokenRuby("YIELD", yytext(), yyline, yycolumn, "Avalia o bloco dado ao método atual com argumentos, se nenhum argumento for dado, nil é usado como um argumento.");
+          case 99: 
+            { return new TokenRuby("CLASS", yytext(), yyline, yycolumn, "Define uma nova classe.");
             }
           case 211: break;
-          case 102: 
-            { return new TokenRuby("WHILE", yytext(), yyline, yycolumn, "Executa o corpo enquanto a expressão de condição retorna verdadeira.");
+          case 100: 
+            { return new TokenRuby("FALSE", yytext(), yyline, yycolumn, "A única instância da classe FalseClass (representa falso)");
             }
           case 212: break;
-          case 103: 
-            { return new TokenRuby("ENSURE", yytext(), yyline, yycolumn, "seu corpo de cláusula é executado sempre que o begincorpobegin for encerrado.");
+          case 101: 
+            { return new TokenRuby("UNDEF", yytext(), yyline, yycolumn, "Cancela a definição do método.");
             }
           case 213: break;
-          case 104: 
-            { return new TokenRuby("RESCUE", yytext(), yyline, yycolumn, "cláusula com o tipo de exceção de um Bloco correspondente");
+          case 102: 
+            { return new TokenRuby("UNTIL", yytext(), yyline, yycolumn, "Executa o corpo até a expressão de condição retornar verdadeira.");
             }
           case 214: break;
-          case 105: 
-            { return new TokenRuby("RETURN", yytext(), yyline, yycolumn, "Sai do método com o valor de retorno.");
+          case 103: 
+            { return new TokenRuby("YIELD", yytext(), yyline, yycolumn, "Avalia o bloco dado ao método atual com argumentos, se nenhum argumento for dado, nil é usado como um argumento.");
             }
           case 215: break;
-          case 106: 
-            { return new TokenRuby("UNLESS", yytext(), yyline, yycolumn, "expressões usadas para a execução condicional reversa. É equivalente a: if !(cond) ... else ...end");
+          case 104: 
+            { return new TokenRuby("WHILE", yytext(), yyline, yycolumn, "Executa o corpo enquanto a expressão de condição retorna verdadeira.");
             }
           case 216: break;
-          case 107: 
-            { return new TokenRuby("MODULE", yytext(), yyline, yycolumn, " tipo de objeto, que é usado para armazenar comandos, valores e fórmulas, é mais pratico pois não é necessário que seja inicializado ");
+          case 105: 
+            { return new TokenRuby("ENSURE", yytext(), yyline, yycolumn, "Seu corpo de cláusula é executado sempre que o begincorpobegin for encerrado.");
             }
           case 217: break;
-          case 108: 
-            { return new TokenRuby("__FILE__", yytext(), yyline, yycolumn, "O nome do arquivo fonte atual");
+          case 106: 
+            { return new TokenRuby("RESCUE", yytext(), yyline, yycolumn, "Cláusula com o tipo de exceção de um Bloco correspondente");
             }
           case 218: break;
-          case 109: 
-            { return new TokenRuby("__LINE__", yytext(), yyline, yycolumn, "o número da linha atual no arquivo de origem.");
+          case 107: 
+            { return new TokenRuby("RETURN", yytext(), yyline, yycolumn, "Sai do método com o valor de retorno.");
             }
           case 219: break;
-          case 110: 
-            { return new TokenRuby("DEFINED?", yytext(), yyline, yycolumn, "Retorna false se a expressão não estiver definida. Retorna a seqüência de caracteres que descreve um tipo de expressão.");
+          case 108: 
+            { return new TokenRuby("UNLESS", yytext(), yyline, yycolumn, "Expressões usadas para a execução condicional reversa. É equivalente a: if !(cond) ... else ...end");
             }
           case 220: break;
+          case 109: 
+            { return new TokenRuby("MODULE", yytext(), yyline, yycolumn, "Tipo de objeto, que é usado para armazenar comandos, valores e fórmulas, é mais pratico pois não é necessário que seja inicializado ");
+            }
+          case 221: break;
+          case 110: 
+            { return new TokenRuby("__FILE__", yytext(), yyline, yycolumn, "O nome do arquivo fonte atual");
+            }
+          case 222: break;
+          case 111: 
+            { return new TokenRuby("__LINE__", yytext(), yyline, yycolumn, "O número da linha atual no arquivo de origem.");
+            }
+          case 223: break;
+          case 112: 
+            { return new TokenRuby("DEFINED?", yytext(), yyline, yycolumn, "Retorna false se a expressão não estiver definida. Retorna a seqüência de caracteres que descreve um tipo de expressão.");
+            }
+          case 224: break;
           default:
             zzScanError(ZZ_NO_MATCH);
         }

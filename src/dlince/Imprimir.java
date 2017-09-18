@@ -8,19 +8,19 @@ public class Imprimir {
 	StringBuffer desc = new StringBuffer();
 	
 	public Imprimir(String name, String value, int line, int column){
-		tamNameValue(name, value);
+		tamNameValue(new StringBuffer(name), new StringBuffer(value));
 		tamLineColumn(line, column);
 		System.out.println(this.nameValue.toString() + this.lineColumn.toString());
 	}
 	
 	public Imprimir(String name, String value, int line, int column, String desc ){
-		tamNameValue(name, value);
+		tamNameValue(new StringBuffer(name), new StringBuffer(value));
 		tamLineColumn(line, column);
-		tamDesc(desc);
+		tamDesc(new StringBuffer(desc));
 		System.out.println(this.nameValue.toString() + this.lineColumn.toString() + this.desc.toString()+"\n");
 	}
 	
-	private void tamNameValue(String name, String value){
+	private void tamNameValue(StringBuffer name, StringBuffer value){
 		this.nameValue.append( "< "+name+", "+value+" >" );
 		int falta = 35 - this.nameValue.length();
 		for(int i = 0; i<falta; i++){
@@ -34,7 +34,7 @@ public class Imprimir {
 			this.lineColumn.append( " " );
 		}
 	}
-	private void tamDesc(String desc){
+	private void tamDesc(StringBuffer desc){
 		for(int i = 0; i<desc.length(); i++){
 			if(i >= 40 && i%40 == 0){
 				this.desc.append( "\n" );

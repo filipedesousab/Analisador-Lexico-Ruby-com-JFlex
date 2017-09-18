@@ -11,16 +11,16 @@ public class TokenRuby {
     public TokenRuby(String string, String yytext, int yyline, int yycolumn) {
 		this.name = string;
         this.value = yytext;
-        this.line = yyline;
-        this.column = yycolumn;
+        this.line = yyline+1;
+        this.column = yycolumn+1;
         this.desc = "";
 	}
     
 	public TokenRuby(String string, String yytext, int yyline, int yycolumn, String desc) {
 		this.name = string;
         this.value = yytext;
-        this.line = yyline;
-        this.column = yycolumn;
+        this.line = yyline+1;
+        this.column = yycolumn+1;
         this.desc = desc;
 	}
 
@@ -33,11 +33,11 @@ public class TokenRuby {
 	}
 
 	public void setLine(int line) {
-		this.line = line;
+		this.line = line+1;
 	}
 
 	public void setColumn(int column) {
-		this.column = column;
+		this.column = column+1;
 	}
 	
 	public void setDesc(String desc) {

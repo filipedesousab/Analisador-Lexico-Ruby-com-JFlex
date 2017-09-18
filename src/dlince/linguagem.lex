@@ -16,9 +16,10 @@ package dlince;
 LineTerminator = \r|\n|\r\n
 InputCharacter = [^\r\n]
 WhiteSpace     = {LineTerminator} | [ \t\f]
-
-Identificador = [a-zA-Z_] [a-zA-Z0-9_]*
-IdentificadorMetodo = [a-zA-Z_] [a-zA-Z0-9_]*("!"|"?")?
+Alfa = [a-zA-Z]
+AlfaNumerico = [a-zA-Z0-9]
+Identificador = ({Alfa}|_)({AlfaNumerico}|_)*
+IdentificadorMetodo = ({Alfa}|_)({AlfaNumerico}|_)*("!"|"?")?
 Digito = [0-9]
 Inteiro = {Digito}+("_"{Digito}+)*
 Decimal = {Digito}+"."{Digito}+|"."{Digito}+|{Digito}+"."
@@ -30,6 +31,10 @@ DecOrInt = {Decimal}|{Inteiro}
 %%
 
 <YYINITIAL> {
+
+/* Expressão Regular */
+\/.*|\n*\/					{ return new TokenRuby("REGEX", yytext(), yyline, yycolumn, "Expressão Regular."); }
+
 /* SIMBOLOS */
 "+="						{ return new TokenRuby("PLUSEQ", yytext(), yyline, yycolumn, "(a += b) equivalente a (a = a + b)"); }
 "-="						{ return new TokenRuby("SUBEQ", yytext(), yyline, yycolumn, "(a -= b) equivalente a (a = a - b)"); }
@@ -88,61 +93,61 @@ DecOrInt = {Decimal}|{Inteiro}
 
 
 /* PALAVRAS RESERVADAS */
-"alias"						{ return new TokenRuby("ALIAS", yytext(), yyline, yycolumn, "mantém a definição atual do método, mesmo quando os métodos são substituídos."); }
-"and"						{ return new TokenRuby("AND", yytext(), yyline, yycolumn, "é equivalente a &&.Avalia o lado esquerdo e, se o resultado for verdadeiro, avalia o lado direito."); }
+"alias"						{ return new TokenRuby("ALIAS", yytext(), yyline, yycolumn, "Mantém a definição atual do método, mesmo quando os métodos são substituídos."); }
+"and"						{ return new TokenRuby("AND", yytext(), yyline, yycolumn, "É equivalente a &&.Avalia o lado esquerdo e, se o resultado for verdadeiro, avalia o lado direito."); }
 "BEGIN"						{ return new TokenRuby("BEGIN", yytext(), yyline, yycolumn, "Registra a rotina de inicialização. O bloco seguido depois BEGIN é avaliado antes de qualquer outra declaração nesse arquivo"); }
-"begin"						{ return new TokenRuby("BEGIN2", yytext(), yyline, yycolumn, "expressão executa seu corpo e retorna o valor da última expressão avaliada."); }
+"begin"						{ return new TokenRuby("BEGIN2", yytext(), yyline, yycolumn, "Expressão executa seu corpo e retorna o valor da última expressão avaliada."); }
 "break"						{ return new TokenRuby("BREAK", yytext(), yyline, yycolumn, "Sai do loop mais interno. O break não sai da expressão case"); }
 "case"						{ return new TokenRuby("CASE", yytext(), yyline, yycolumn, "As case expressões também são para execução condicional. sendo que suas comparações equivale ao mesmo que ===."); }
 "class"						{ return new TokenRuby("CLASS", yytext(), yyline, yycolumn, "Define uma nova classe."); }
-"def"						{ return new TokenRuby("DEF", yytext(), yyline, yycolumn, " palavra para indentificar métodos, a partir dela que o programa identifica a palavra a frente como um método"); }
+"def"						{ return new TokenRuby("DEF", yytext(), yyline, yycolumn, "Palavra para indentificar métodos, a partir dela que o programa identifica a palavra a frente como um método"); }
 "defined?"					{ return new TokenRuby("DEFINED?", yytext(), yyline, yycolumn, "Retorna false se a expressão não estiver definida. Retorna a seqüência de caracteres que descreve um tipo de expressão."); }
 "do"						{ return new TokenRuby("DO", yytext(), yyline, yycolumn, "Define uma estrutura de repetição sem condição" ); }
 "else"						{ return new TokenRuby("ELSE", yytext(), yyline, yycolumn, "Representa a execução de um comando quando a condição não é validada"); }
 "elsif"						{ return new TokenRuby("ELSIF", yytext(), yyline, yycolumn, "Equivale ao fechamento de uma condição e abertura de outra, mas resumida em uma unica palavra."); }
 "END"						{ return new TokenRuby("END", yytext(), yyline, yycolumn, "Define o final da Rotina de inicialização, finaliza o bloco"); }
 "end"						{ return new TokenRuby("END2", yytext(), yyline, yycolumn, "Define o final de um bloco de Expressões"); }
-"ensure"					{ return new TokenRuby("ENSURE", yytext(), yyline, yycolumn, "seu corpo de cláusula é executado sempre que o begincorpobegin for encerrado."); }
-"false"						{ return new TokenRuby("FALSE", yytext(), yyline, yycolumn, "a única instância da classe FalseClass (representa falso)"); }
-"for"						{ return new TokenRuby("FOR", yytext(), yyline, yycolumn, "palavra para estrutura de repetição, Executa o corpo para cada elemento no resultado da expressão."); }
-"if"						{ return new TokenRuby("IF", yytext(), yyline, yycolumn, "expressãos usadas para execução condicional. Os valores false e nil são falsos, e tudo o mais é verdade."); }
+"ensure"					{ return new TokenRuby("ENSURE", yytext(), yyline, yycolumn, "Seu corpo de cláusula é executado sempre que o begincorpobegin for encerrado."); }
+"false"						{ return new TokenRuby("FALSE", yytext(), yyline, yycolumn, "A única instância da classe FalseClass (representa falso)"); }
+"for"						{ return new TokenRuby("FOR", yytext(), yyline, yycolumn, "Palavra para estrutura de repetição, Executa o corpo para cada elemento no resultado da expressão."); }
+"if"						{ return new TokenRuby("IF", yytext(), yyline, yycolumn, "Expressãos usadas para execução condicional. Os valores false e nil são falsos, e tudo o mais é verdade."); }
 "in"						{ return new TokenRuby("IN", yytext(), yyline, yycolumn, "Define um contado para uma estrutura de Repetição For"); }
-"module"					{ return new TokenRuby("MODULE", yytext(), yyline, yycolumn, " tipo de objeto, que é usado para armazenar comandos, valores e fórmulas, é mais pratico pois não é necessário que seja inicializado "); }
+"module"					{ return new TokenRuby("MODULE", yytext(), yyline, yycolumn, "Tipo de objeto, que é usado para armazenar comandos, valores e fórmulas, é mais pratico pois não é necessário que seja inicializado "); }
 "next"						{ return new TokenRuby("NEXT", yytext(), yyline, yycolumn, "Salta para a próxima iteração do loop mais interno."); }
-"nil"						{ return new TokenRuby("NIL", yytext(), yyline, yycolumn, "é equivalente a Nulo.a única instância da Classe NilClass (representa falso)"); }
+"nil"						{ return new TokenRuby("NIL", yytext(), yyline, yycolumn, "É equivalente a Nulo.a única instância da Classe NilClass (representa falso)"); }
 "not"						{ return new TokenRuby("NOT", yytext(), yyline, yycolumn, "Retorna verdadeiro se for falso, falso se verdadeiro."); }
-"or"						{ return new TokenRuby("OR", yytext(), yyline, yycolumn, "é equivalente a ||.Avalia o lado esquerdo, então se o resultado for falso, avalia o lado direito"); }
+"or"						{ return new TokenRuby("OR", yytext(), yyline, yycolumn, "É equivalente a ||.Avalia o lado esquerdo, então se o resultado for falso, avalia o lado direito"); }
 "redo"						{ return new TokenRuby("REDO", yytext(), yyline, yycolumn, "Reinicia a iteração do loop mais interno, sem verificar a condição do loop."); }
-"rescue"					{ return new TokenRuby("RESCUE", yytext(), yyline, yycolumn, "cláusula com o tipo de exceção de um Bloco correspondente"); }
-"retry"						{ return new TokenRuby("RETRY", yytext(), yyline, yycolumn, "reinicia a invocação de uma chamada"); }
+"rescue"					{ return new TokenRuby("RESCUE", yytext(), yyline, yycolumn, "Cláusula com o tipo de exceção de um Bloco correspondente"); }
+"retry"						{ return new TokenRuby("RETRY", yytext(), yyline, yycolumn, "Reinicia a invocação de uma chamada"); }
 "return"					{ return new TokenRuby("RETURN", yytext(), yyline, yycolumn, "Sai do método com o valor de retorno."); }
-"self"						{ return new TokenRuby("SELF", yytext(), yyline, yycolumn, "o receptor do método atual"); }
-"super"						{ return new TokenRuby("SUPER", yytext(), yyline, yycolumn, "chama o método que substitui o método atual"); }
-"then"						{ return new TokenRuby("THEN", yytext(), yyline, yycolumn, " indica o proximo comando a ser executado. sua colocação é opcional "); }
-"true"						{ return new TokenRuby("TRUE", yytext(), yyline, yycolumn, "a única instância da classe TrueClass (valor verdadeiro típico)"); }
+"self"						{ return new TokenRuby("SELF", yytext(), yyline, yycolumn, "O receptor do método atual"); }
+"super"						{ return new TokenRuby("SUPER", yytext(), yyline, yycolumn, "Chama o método que substitui o método atual"); }
+"then"						{ return new TokenRuby("THEN", yytext(), yyline, yycolumn, "Indica o proximo comando a ser executado. sua colocação é opcional "); }
+"true"						{ return new TokenRuby("TRUE", yytext(), yyline, yycolumn, "A única instância da classe TrueClass (valor verdadeiro típico)"); }
 "undef"						{ return new TokenRuby("UNDEF", yytext(), yyline, yycolumn, "Cancela a definição do método."); }
-"unless"					{ return new TokenRuby("UNLESS", yytext(), yyline, yycolumn, "expressões usadas para a execução condicional reversa. É equivalente a: if !(cond) ... else ...end"); }
+"unless"					{ return new TokenRuby("UNLESS", yytext(), yyline, yycolumn, "Expressões usadas para a execução condicional reversa. É equivalente a: if !(cond) ... else ...end"); }
 "until"						{ return new TokenRuby("UNTIL", yytext(), yyline, yycolumn, "Executa o corpo até a expressão de condição retornar verdadeira."); }
 "when"						{ return new TokenRuby("WHEN", yytext(), yyline, yycolumn, "Palavra utilizada para subdividir as condições em uma expressão case"); }
 "while"						{ return new TokenRuby("WHILE", yytext(), yyline, yycolumn, "Executa o corpo enquanto a expressão de condição retorna verdadeira."); }
 "yield"						{ return new TokenRuby("YIELD", yytext(), yyline, yycolumn, "Avalia o bloco dado ao método atual com argumentos, se nenhum argumento for dado, nil é usado como um argumento."); }
 "__FILE__"					{ return new TokenRuby("__FILE__", yytext(), yyline, yycolumn, "O nome do arquivo fonte atual"); }
-"__LINE__"					{ return new TokenRuby("__LINE__", yytext(), yyline, yycolumn, "o número da linha atual no arquivo de origem."); }
+"__LINE__"					{ return new TokenRuby("__LINE__", yytext(), yyline, yycolumn, "O número da linha atual no arquivo de origem."); }
 
 }
 
 <YYINITIAL> {
 /* IDENTIFICADORES */ 
-{Identificador}				{ return new TokenRuby("IDENTIFICADOR", yytext(), yyline, yycolumn, "Identificador de métodos, variáveis, constante, etc"); }
-{IdentificadorMetodo}			{ return new TokenRuby("IDENTIFICADOR_METODO", yytext(), yyline, yycolumn); }
+{Identificador}				{ return new TokenRuby("IDENTIFICADOR", yytext(), yyline, yycolumn, "Identificador de métodos, variáveis, constantes, etc"); }
+{IdentificadorMetodo}			{ return new TokenRuby("IDENTIFICADOR_METODO", yytext(), yyline, yycolumn, "Identificador de métodos que utilizam ? ou ! no final"); }
 
 /* NÚMEROS */
-{DecOrInt}("e"|"E")("+"|"-")?{DecOrInt} { return new TokenRuby("NOTACAO_CIENTIFICA", yytext(), yyline, yycolumn); }
-{Inteiro}					{ return new TokenRuby("INTEIRO", yytext(), yyline, yycolumn); }
-{Decimal}					{ return new TokenRuby("DECIMAL", yytext(), yyline, yycolumn); }
+{DecOrInt}("e"|"E")("+"|"-")?{DecOrInt} { return new TokenRuby("NOTACAO_CIENTIFICA", yytext(), yyline, yycolumn, "Escrita de notação científica"); }
+{Inteiro}					{ return new TokenRuby("INTEIRO", yytext(), yyline, yycolumn, "Valor de número inteiro."); }
+{Decimal}					{ return new TokenRuby("DECIMAL", yytext(), yyline, yycolumn, "Valor de número decimal"); }
 
 
-\"							{ string.setLength(0); yybegin(STRING); }
+\"							{yybegin(STRING); string.setLength(0); }
 
 /* COMENTÁRIO */
 "=begin"(.*{LineTerminator}*)*"=end" | "#"+.+	{ /* ignore */ }
@@ -154,8 +159,8 @@ DecOrInt = {Decimal}|{Inteiro}
 /* ESTÁDO PARA TRATAR STRINGS */
 <STRING> {
 \"							{ 
-                              new TokenRuby("STRING", string.toString(), yyline, yycolumn); 
-                              yybegin(YYINITIAL); 
+							  yybegin(YYINITIAL);
+                              return new TokenRuby("STRING", string.toString(), yyline, yycolumn, "String, sequência de caracteres."); 
 							}
 
 /* CONDIÇÃO PARA TRATAR O CHAR
@@ -164,12 +169,14 @@ DecOrInt = {Decimal}|{Inteiro}
 /* [^\n\r]						{ string.append( yytext() ); yybegin(CHAR); } */
 
 [^\n\r\"\\]+				{ string.append( yytext() ); }
-\\t							{ string.append('\t'); }
-\\n							{ string.append('\n'); }
-
-\\r							{ string.append('\r'); }
+\\\\n						{ string.append("\\n"); }
+\\\\t						{ string.append("\\t"); }
+\\\\r						{ string.append("\\r"); }
+\\t							{ string.append("\t"); }
+\\n							{ string.append("\n"); }
+\\r							{ string.append("\r"); }
 \\\"						{ string.append('\"'); }
-\\							{ string.append('\\'); }
+\\\\						{ string.append("\\"); }
 }
 
 /* ESTADOS PARA TRATAR CHAR
@@ -183,7 +190,7 @@ DecOrInt = {Decimal}|{Inteiro}
 }
 
 /* Exceção caso entre caractére inválido */
-.							{ 
-							  throw new RuntimeException("Caractere inválido " + yytext() + " na linha " + yyline + ", coluna " +yycolumn); 
+[^]							{ 
+							  throw new RuntimeException("Caractere inválido " + yytext() + " na linha " + (yyline+1) + ", coluna " +(yycolumn+1)); 
 							}
 
